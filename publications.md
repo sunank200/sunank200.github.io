@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Publications
+subtitle: Research contributions
 ---
 
 You can also browse my [Google Scholar](https://scholar.google.com/citations?user=iT54hbMAAAAJ&hl=en) profile 
