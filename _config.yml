@@ -25,7 +25,7 @@ description: Personal Website
 navbar-links:
   Home: ""
   Publications: "publications"
-  # Blog: "blog"
+  Blog: "blog"
   # Talks: "talks"
   Resume: "resume"
 
@@ -107,6 +107,7 @@ mathjax: true
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
+paginate_path: "blog/page:num"
 
 kramdown:
   input: GFM
