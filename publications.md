@@ -21,4 +21,4 @@ You can also browse my [Google Scholar](https://scholar.google.com/citations?use
 - **A Real-time Travel Planning algorithm via multimodal transport network for advanced traveler information system(ATIS)**  
 	**Ankit Chaurasia**, Karnika Agarwal, Kshitij Kadane.  
     *2019 International Conference on Machine Learning (ICML) Workshop on Computational Biology*.  
-	[thesis](https://tinyurl.com/v659tvp4){: .btn}
+	[Thesis](https://tinyurl.com/v659tvp4){: .btn}
