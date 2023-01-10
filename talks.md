@@ -21,7 +21,7 @@ This talk also aims to explain:
 - Guide to implement your deferrable operator with the astronomer-providers repository as an example to start with
 - References for useful concepts and libraries: Concurrency, Python asyncio
 
-[Video]https://youtu.be/JwjUMNlu7Is){: .btn}
-[Video]https://youtu.be/QhSn9oviZ9g){: .btn}
+[Video](https://youtu.be/JwjUMNlu7Is){: .btn}
+[Video](https://youtu.be/QhSn9oviZ9g){: .btn}
 
 
