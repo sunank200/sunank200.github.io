@@ -6,7 +6,6 @@ subtitle: Research contributions
 
 You can also browse my [Google Scholar](https://scholar.google.com/citations?user=Oi1BC2AAAAAJ&hl=en) profile 
 
-
 **Conference**
 
 - **Pest management in cotton farms: an AI-system case study from the global South**  
