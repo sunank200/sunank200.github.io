@@ -12,7 +12,7 @@ You can also browse my [Google Scholar](https://scholar.google.com/citations?use
 	Aman Dalmia, Jerome White, **Ankit Chaurasia**, Vishal Agarwal, Rajesh Jain, Dhruvin Vora, Balasaheb Dhame, Raghu Dharmaraju, Rahul Panicker.  
 	*2020 ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)*.  
 	[PDF](https://dl.acm.org/doi/10.1145/3394486.3403363){: .btn}
-	[Video](https://youtu.be/5ugYuq4ZZ04){: .btn}
+	[Video](https://youtu.be/LP_A4jydmz4){: .btn}
 
 
 **Thesis**
