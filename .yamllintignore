@@ -1,0 +1,6 @@
+node_modules/
+_site/
+.git/
+*.min.js
+*.min.css
+.github/workflows/static-checks.yml

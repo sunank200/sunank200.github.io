@@ -40,6 +40,7 @@ check_tool "cspell"
 check_tool "stylelint"
 check_tool "markdownlint"
 check_tool "yamllint"
+check_tool "prettier"
 
 print_status "All required tools are installed"
 
@@ -77,6 +78,14 @@ if yamllint -c .yamllint .; then
 else
     print_error "YAML linting failed. Please fix YAML issues."
     exit 1
+fi
+
+# Run Prettier formatting check
+echo "Running Prettier formatting check..."
+if prettier --check .; then
+    print_status "Prettier formatting check passed"
+else
+    print_warning "Prettier formatting check failed. Run 'npm run prettier-fix' to auto-fix formatting issues."
 fi
 
 # Check if Jekyll build works

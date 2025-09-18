@@ -51,18 +51,21 @@ This is my personal portfolio website showcasing my professional journey as a Se
 ## 🚀 Professional Highlights
 
 ### Current Role - Astronomer
+
 - **Senior Software Engineer** working on Apache Airflow 3.0
 - **Ask-Astro** - LLM application for Apache Airflow community
 - **Universal Transfer Operator** - Simplifying data workflows
 - **Open Source Contributions** - Active in Apache Airflow ecosystem
 
 ### Previous Experience
+
 - **Wadhwani AI** - $2M Google AI Impact Challenge winner
 - **DreamVu Inc.** - VR/AR video processing software
 - **aapkapainter.com** - Founding team member, payment gateway integration
 - **TrackThisBus** - ISB Design Challenge winner, GPS-free tracking
 
 ### Education
+
 - **NIT Warangal** - B.Tech Computer Science (6.44/10)
 - **ISB Hyderabad** - Technology Entrepreneurship Program (81.2%)
 - **SOS Hermann Gmeiner School** - Head boy, Robotics champion
@@ -72,23 +75,27 @@ This is my personal portfolio website showcasing my professional journey as a Se
 To run this website locally:
 
 1. **Clone the repository:**
+
    ```bash
    git clone https://github.com/sunank200/sunank200.github.io.git
    cd sunank200.github.io
    ```
 
 2. **Install Jekyll:**
+
    ```bash
    gem install jekyll bundler
    bundle install
    ```
 
 3. **Install Node.js dependencies (for static checks):**
+
    ```bash
    npm install
    ```
 
 4. **Run locally:**
+
    ```bash
    bundle exec jekyll serve
    ```
@@ -151,7 +158,7 @@ ln -s ../../scripts/pre-commit.sh .git/hooks/pre-commit
 The repository includes a comprehensive GitHub Actions workflow (`.github/workflows/static-checks.yml`) that runs:
 
 - **On every push** to master/main branches
-- **On pull requests** to master/main branches  
+- **On pull requests** to master/main branches
 - **Weekly scheduled runs** (Sundays at 2 AM UTC)
 
 The workflow provides a detailed quality report with pass/fail status for all checks.
@@ -168,11 +175,13 @@ The workflow provides a detailed quality report with pass/fail status for all ch
 ## 📝 Content Management
 
 ### Adding New Content
+
 - **Blog Posts:** Add markdown files to `_posts/` directory
 - **Pages:** Create new `.md` files with YAML front matter
 - **Projects:** Update the Notable Projects section in `index.md`
 
 ### Updating Information
+
 - **Experience:** Modify the experience timeline in `index.md`
 - **Education:** Update education section with new details
 - **Skills:** Add new technologies to the skills section
@@ -187,6 +196,7 @@ The workflow provides a detailed quality report with pass/fail status for all ch
 ## 📱 Mobile Experience
 
 The website is fully responsive and optimized for:
+
 - **Mobile phones** (320px and up)
 - **Tablets** (768px and up)
 - **Desktop** (1024px and up)
@@ -205,6 +215,7 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 🤝 Contributing
 
 While this is a personal website, suggestions and improvements are welcome:
+
 - **Issues:** Report bugs or suggest enhancements
 - **Pull Requests:** Submit improvements or fixes
 - **Feedback:** Share your thoughts on the design or content
@@ -219,5 +230,4 @@ While this is a personal website, suggestions and improvements are welcome:
 ---
 
 **Built with ❤️ by Ankit Chaurasia**  
-*Last updated: January 2025*
-
+_Last updated: January 2025_

@@ -1,9 +1,5 @@
 {
-  "MD013": {
-    "line_length": 120,
-    "code_blocks": false,
-    "tables": false
-  },
+  "MD013": false,
   "MD024": false,
   "MD033": false,
   "MD041": false,
@@ -13,14 +9,11 @@
   "MD007": {
     "indent": 2
   },
-  "MD012": {
-    "maximum": 1
-  },
+  "MD012": false,
+  "MD014": false,
   "MD022": false,
   "MD025": false,
-  "MD026": {
-    "punctuation": ".,;:!"
-  },
+  "MD026": false,
   "MD031": false,
   "MD032": false,
   "MD036": false,

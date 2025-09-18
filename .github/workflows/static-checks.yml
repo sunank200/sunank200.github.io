@@ -2,12 +2,12 @@ name: Static Checks & Quality Assurance
 
 on:
   push:
-    branches: [ master, main ]
+    branches: [master, main]
   pull_request:
-    branches: [ master, main ]
+    branches: [master, main]
   schedule:
     # Run weekly on Sundays at 2 AM UTC
-    - cron: '0 2 * * 0'
+    - cron: "0 2 * * 0"
 
 jobs:
   spelling-check:
@@ -20,7 +20,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: "18"
 
       - name: Install cspell
         run: npm install -g cspell
@@ -315,7 +315,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.0'
+          ruby-version: "3.0"
           bundler-cache: true
 
       - name: Install Jekyll
@@ -394,7 +394,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: "18"
 
       - name: Install stylelint
         run: npm install -g stylelint stylelint-config-standard
@@ -520,7 +520,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: "18"
 
       - name: Install markdownlint
         run: npm install -g markdownlint-cli
@@ -572,7 +572,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.9'
+          python-version: "3.9"
 
       - name: Install yamllint
         run: pip install yamllint
@@ -608,16 +608,16 @@ jobs:
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
         with:
-          scan-type: 'fs'
-          scan-ref: '.'
-          format: 'sarif'
-          output: 'trivy-results.sarif'
+          scan-type: "fs"
+          scan-ref: "."
+          format: "sarif"
+          output: "trivy-results.sarif"
 
       - name: Upload Trivy scan results to GitHub Security tab
         uses: github/codeql-action/upload-sarif@v2
         if: always()
         with:
-          sarif_file: 'trivy-results.sarif'
+          sarif_file: "trivy-results.sarif"
 
   accessibility-check:
     name: Accessibility Check
@@ -629,7 +629,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.0'
+          ruby-version: "3.0"
           bundler-cache: true
 
       - name: Install Jekyll
@@ -643,7 +643,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: "18"
 
       - name: Install pa11y
         run: npm install -g pa11y
@@ -665,7 +665,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.0'
+          ruby-version: "3.0"
           bundler-cache: true
 
       - name: Install Jekyll
@@ -679,7 +679,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: "18"
 
       - name: Install lighthouse-ci
         run: npm install -g @lhci/cli@0.12.x
@@ -698,7 +698,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.0'
+          ruby-version: "3.0"
           bundler-cache: true
 
       - name: Install Jekyll
@@ -712,7 +712,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: "18"
 
       - name: Install linkchecker
         run: npm install -g linkchecker
@@ -731,7 +731,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.0'
+          ruby-version: "3.0"
           bundler-cache: true
 
       - name: Install Jekyll
@@ -748,19 +748,31 @@ jobs:
             echo "Build failed: _site directory not created"
             exit 1
           fi
-          
+
           if [ ! -f "_site/index.html" ]; then
             echo "Build failed: index.html not generated"
             exit 1
           fi
-          
+
           echo "Build successful: Site generated correctly"
           ls -la _site/
 
   quality-report:
     name: Quality Report
     runs-on: ubuntu-latest
-    needs: [spelling-check, html-validation, css-validation, markdown-linting, yaml-validation, security-scan, accessibility-check, performance-check, link-check, build-test]
+    needs:
+      [
+        spelling-check,
+        html-validation,
+        css-validation,
+        markdown-linting,
+        yaml-validation,
+        security-scan,
+        accessibility-check,
+        performance-check,
+        link-check,
+        build-test,
+      ]
     if: always()
     steps:
       - name: Generate Quality Report

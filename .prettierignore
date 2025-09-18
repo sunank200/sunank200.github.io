@@ -1,0 +1,16 @@
+node_modules/
+_site/
+.git/
+*.min.js
+*.min.css
+css/bootstrap.min.css
+css/bootstrap-social.css
+js/bootstrap.min.js
+js/jquery-1.11.2.min.js
+js/pdfobject.min.js
+
+_layouts/
+_includes/
+_posts/
+blog/
+resume.html
