@@ -1,4 +1,4 @@
-name: Static Checks & Quality Assurance
+name: CI/CD Pipeline - Quality Checks & Deployment
 
 on:
   push:
@@ -311,6 +311,7 @@ jobs:
         performance-check,
         link-check,
         build-test,
+        deploy,
       ]
     if: always()
     steps:
@@ -329,8 +330,75 @@ jobs:
           echo "| Performance Check | ${{ needs.performance-check.result == 'success' && '✅ Pass' || '❌ Fail' }} |" >> $GITHUB_STEP_SUMMARY
           echo "| Link Check | ${{ needs.link-check.result == 'success' && '✅ Pass' || '❌ Fail' }} |" >> $GITHUB_STEP_SUMMARY
           echo "| Build Test | ${{ needs.build-test.result == 'success' && '✅ Pass' || '❌ Fail' }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Deployment | ${{ needs.deploy.result == 'success' && '✅ Deployed' || (needs.deploy.result == 'skipped' && '⏭️ Skipped' || '❌ Failed') }} |" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### 📊 Summary" >> $GITHUB_STEP_SUMMARY
-          echo "- **Total Checks:** 9" >> $GITHUB_STEP_SUMMARY
-          echo "- **Passed:** $(echo '${{ needs.spelling-check.result == 'success' && '1' || '0' }} ${{ needs.css-validation.result == 'success' && '1' || '0' }} ${{ needs.markdown-linting.result == 'success' && '1' || '0' }} ${{ needs.yaml-validation.result == 'success' && '1' || '0' }} ${{ needs.security-scan.result == 'success' && '1' || '0' }} ${{ needs.accessibility-check.result == 'success' && '1' || '0' }} ${{ needs.performance-check.result == 'success' && '1' || '0' }} ${{ needs.link-check.result == 'success' && '1' || '0' }} ${{ needs.build-test.result == 'success' && '1' || '0' }}' | tr ' ' '+' | bc)" >> $GITHUB_STEP_SUMMARY
-          echo "- **Failed:** $(echo '9 - $(echo '${{ needs.spelling-check.result == 'success' && '1' || '0' }} ${{ needs.css-validation.result == 'success' && '1' || '0' }} ${{ needs.markdown-linting.result == 'success' && '1' || '0' }} ${{ needs.yaml-validation.result == 'success' && '1' || '0' }} ${{ needs.security-scan.result == 'success' && '1' || '0' }} ${{ needs.accessibility-check.result == 'success' && '1' || '0' }} ${{ needs.performance-check.result == 'success' && '1' || '0' }} ${{ needs.link-check.result == 'success' && '1' || '0' }} ${{ needs.build-test.result == 'success' && '1' || '0' }}' | tr ' ' '+' | bc)" >> $GITHUB_STEP_SUMMARY
+          echo "- **Total Checks:** 10" >> $GITHUB_STEP_SUMMARY
+          echo "- **Passed:** $(echo '${{ needs.spelling-check.result == 'success' && '1' || '0' }} ${{ needs.css-validation.result == 'success' && '1' || '0' }} ${{ needs.markdown-linting.result == 'success' && '1' || '0' }} ${{ needs.yaml-validation.result == 'success' && '1' || '0' }} ${{ needs.security-scan.result == 'success' && '1' || '0' }} ${{ needs.accessibility-check.result == 'success' && '1' || '0' }} ${{ needs.performance-check.result == 'success' && '1' || '0' }} ${{ needs.link-check.result == 'success' && '1' || '0' }} ${{ needs.build-test.result == 'success' && '1' || '0' }} ${{ needs.deploy.result == 'success' && '1' || '0' }}' | tr ' ' '+' | bc)" >> $GITHUB_STEP_SUMMARY
+          echo "- **Failed:** $(echo '10 - $(echo '${{ needs.spelling-check.result == 'success' && '1' || '0' }} ${{ needs.css-validation.result == 'success' && '1' || '0' }} ${{ needs.markdown-linting.result == 'success' && '1' || '0' }} ${{ needs.yaml-validation.result == 'success' && '1' || '0' }} ${{ needs.security-scan.result == 'success' && '1' || '0' }} ${{ needs.accessibility-check.result == 'success' && '1' || '0' }} ${{ needs.performance-check.result == 'success' && '1' || '0' }} ${{ needs.link-check.result == 'success' && '1' || '0' }} ${{ needs.build-test.result == 'success' && '1' || '0' }} ${{ needs.deploy.result == 'success' && '1' || '0' }}' | tr ' ' '+' | bc)" >> $GITHUB_STEP_SUMMARY
+
+  deploy:
+    name: Deploy to GitHub Pages
+    runs-on: ubuntu-latest
+    needs:
+      [
+        spelling-check,
+        css-validation,
+        markdown-linting,
+        yaml-validation,
+        security-scan,
+        accessibility-check,
+        performance-check,
+        link-check,
+        build-test,
+      ]
+    if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "2.7"
+          bundler-cache: true
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libxml2-dev libxslt1-dev zlib1g-dev
+
+      - name: Configure nokogiri to use system libraries
+        run: |
+          bundle config build.nokogiri --use-system-libraries
+
+      - name: Clear bundler cache and install Jekyll
+        run: |
+          gem install bundler:2.4.22
+          bundle config --delete path
+          bundle config --delete deployment
+          bundle config --delete frozen
+          rm -f Gemfile.lock
+          bundle install --retry=3
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
