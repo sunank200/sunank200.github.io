@@ -207,4 +207,10 @@ gems:
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
 
-theme: 
+# Beautiful Jekyll theme configuration
+# theme: beautiful-jekyll
+
+# Force Jekyll processing
+plugins:
+  - jekyll-paginate
+site: sunank200.github.io
