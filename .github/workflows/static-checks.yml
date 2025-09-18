@@ -55,6 +55,9 @@ jobs:
           gem install bundler:2.4.22
           bundle config --delete path
           bundle config --delete deployment
+          bundle config --delete frozen
+          # Remove old Gemfile.lock if it exists to avoid version conflicts
+          rm -f Gemfile.lock
           bundle install --retry=3
 
       - name: Build Jekyll site
@@ -173,6 +176,9 @@ jobs:
           gem install bundler:2.4.22
           bundle config --delete path
           bundle config --delete deployment
+          bundle config --delete frozen
+          # Remove old Gemfile.lock if it exists to avoid version conflicts
+          rm -f Gemfile.lock
           bundle install --retry=3
 
       - name: Build Jekyll site
@@ -220,6 +226,9 @@ jobs:
           gem install bundler:2.4.22
           bundle config --delete path
           bundle config --delete deployment
+          bundle config --delete frozen
+          # Remove old Gemfile.lock if it exists to avoid version conflicts
+          rm -f Gemfile.lock
           bundle install --retry=3
 
       - name: Build Jekyll site
@@ -264,6 +273,9 @@ jobs:
           gem install bundler:2.4.22
           bundle config --delete path
           bundle config --delete deployment
+          bundle config --delete frozen
+          # Remove old Gemfile.lock if it exists to avoid version conflicts
+          rm -f Gemfile.lock
           bundle install --retry=3
 
       - name: Build Jekyll site
@@ -308,6 +320,9 @@ jobs:
           gem install bundler:2.4.22
           bundle config --delete path
           bundle config --delete deployment
+          bundle config --delete frozen
+          # Remove old Gemfile.lock if it exists to avoid version conflicts
+          rm -f Gemfile.lock
           bundle install --retry=3
 
       - name: Build Jekyll site
