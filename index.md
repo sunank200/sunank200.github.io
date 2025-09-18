@@ -23,15 +23,17 @@ As a strong advocate of open source and believer in "Learning by Doing," I have 
 ## 📋 Table of Contents
 
 <div class="table-of-contents">
-- [💼 Experience](#experience)
-- [🎓 Education](#education)
-- [🛠️ Skills & Expertise](#skills--expertise)
-- [🏆 Certifications](#certifications)
-- [🚀 Notable Projects](#notable-projects)
-- [🎯 Interests](#interests)
-- [📄 Resume](#resume)
-- [📰 Recent Updates](#recent-updates)
-- [📞 Contact](#contact)
+<ul>
+<li><a href="#experience">💼 Experience</a></li>
+<li><a href="#education">🎓 Education</a></li>
+<li><a href="#skills--expertise">🛠️ Skills & Expertise</a></li>
+<li><a href="#certifications">🏆 Certifications</a></li>
+<li><a href="#notable-projects">🚀 Notable Projects</a></li>
+<li><a href="#interests">🎯 Interests</a></li>
+<li><a href="#resume">📄 Resume</a></li>
+<li><a href="#recent-updates">📰 Recent Updates</a></li>
+<li><a href="#contact">📞 Contact</a></li>
+</ul>
 </div>
 
 ## Experience {#experience}
@@ -40,71 +42,123 @@ As a strong advocate of open source and believer in "Learning by Doing," I have 
 
 <div class="experience-item">
 <div class="experience-number">1</div>
-<div class="experience-date">Dec 2022 — Present</div>
+<div class="experience-date">Jan 2022 — Present</div>
 <div class="experience-title">Senior Software Engineer</div>
 <div class="experience-company">Astronomer</div>
 <div class="experience-description">
-Working on Apache Airflow core platform and ecosystem. Led development of Ask-Astro, an innovative LLM application integrating Apache Airflow with advanced AI technology. Contributed to Universal Transfer Operator, simplifying data transfer workflows and reducing 100+ operators to a single interface. Active contributor to multiple open-source projects with strong community presence.
+Working on Apache Airflow 3.0 release and core platform development. Led development of Ask-Astro, an open-source reference implementation of Andreessen Horowitz's LLM Application Architecture. Working on Universal Transfer Operator that simplifies data transfer workflows. Design and contribute to Astro Python SDK for rapid development of ETL workflows. Implemented Apache Airflow Providers with Deferrable Operators & Sensors. Presented at Airflow Summit 2022 on deferrable operators.
 </div>
 <div class="experience-tech">
 <span class="tech-tag">Python</span>
 <span class="tech-tag">Apache Airflow</span>
-<span class="tech-tag">Kubernetes</span>
-<span class="tech-tag">Docker</span>
 <span class="tech-tag">LLM</span>
-<span class="tech-tag">Open Source</span>
+<span class="tech-tag">LangChain</span>
+<span class="tech-tag">AWS</span>
+<span class="tech-tag">GCP</span>
 </div>
 </div>
 
 <div class="experience-item">
 <div class="experience-number">2</div>
-<div class="experience-date">Feb 2019 — Dec 2022</div>
+<div class="experience-date">Jan 2021 — Jan 2022</div>
 <div class="experience-title">Senior Software Engineer</div>
-<div class="experience-company">Wadhwani Institute for Artificial Intelligence</div>
+<div class="experience-company">Wadhwani AI</div>
 <div class="experience-description">
-Led engineering teams across healthcare and agriculture projects. Built complete backend systems, microservices, and data pipelines for social impact solutions. Key contributor to pest management project that won Google's $2M AI Impact Challenge. Demoed AI solutions to Sundar Pichai at Google AI Impact Challenge Summit. Developed systems currently used by 11,000+ farmers.
+Hired and led engineering teams across multiple projects in healthcare and agriculture domains. Led engineering effort for annotation studio - data management and job orchestration platform using Apache Airflow, FastAPI and React. Engineered microservices including authentication, geospatial directory and emailing service using Django, AWS SES, OAuth 2.0, and AWS Cognito. Reduced video buffering time by 75% on open-source CVAT annotation tool by implementing Redis cache.
 </div>
 <div class="experience-tech">
 <span class="tech-tag">Python</span>
 <span class="tech-tag">Django</span>
 <span class="tech-tag">FastAPI</span>
 <span class="tech-tag">React</span>
-<span class="tech-tag">PyTorch</span>
-<span class="tech-tag">MLOps</span>
+<span class="tech-tag">Apache Airflow</span>
+<span class="tech-tag">AWS</span>
 </div>
 </div>
 
 <div class="experience-item">
 <div class="experience-number">3</div>
-<div class="experience-date">2017 — 2019</div>
-<div class="experience-title">Software Engineer & Entrepreneur</div>
-<div class="experience-company">Various Companies & Startups</div>
+<div class="experience-date">Feb 2019 — Jan 2021</div>
+<div class="experience-title">Software Product Engineer</div>
+<div class="experience-company">Wadhwani AI</div>
 <div class="experience-description">
-Worked across multiple companies and founded startup ventures. Built real-time position reporting system for buses without GPS. Developed AR/VR camera applications, drone data analysis, and ML-based web solutions. Gained experience in full-stack development and product management.
+Designed, developed and deployed pest management system using PyTorch-based model on phone/cloud to identify harmful pests and alert farmers about infestation. Part of team that won $2M grant from Google AI Impact Challenge. Developed complete pipeline for data collection (ODK), annotation (LabelMe), model deployment, analytics dashboard with Django backend. Built COVID-19 mobility dashboard for 11 state government authorities in India.
 </div>
 <div class="experience-tech">
-<span class="tech-tag">JavaScript</span>
-<span class="tech-tag">React</span>
-<span class="tech-tag">Node.js</span>
-<span class="tech-tag">Startup</span>
-<span class="tech-tag">Product Management</span>
+<span class="tech-tag">PyTorch</span>
+<span class="tech-tag">Django</span>
+<span class="tech-tag">Computer Vision</span>
+<span class="tech-tag">GCP</span>
+<span class="tech-tag">Data Engineering</span>
+<span class="tech-tag">MLOps</span>
 </div>
 </div>
 
 <div class="experience-item">
 <div class="experience-number">4</div>
-<div class="experience-date">2016 — 2017</div>
-<div class="experience-title">Software Engineer</div>
-<div class="experience-company">Early Career Roles</div>
+<div class="experience-date">Dec 2017 — Jan 2019</div>
+<div class="experience-title">Software Development Engineer</div>
+<div class="experience-company">DreamVu Inc.</div>
 <div class="experience-description">
-Started professional career with focus on web development and software engineering. Worked on various projects including web crawlers, face detection systems, and mobile applications. Gained foundational experience in software development lifecycle and team collaboration.
+Developed end-to-end modular video acquisition and processing software for VR/AR and machine vision applications for in-house camera along with SDK for third party integration. Built camera calibration software for intrinsic and extrinsic camera calibration. Helped secure angel funding from SRI capital through technical contributions to 360-degree, 3D video capture platform.
 </div>
 <div class="experience-tech">
-<span class="tech-tag">Python</span>
-<span class="tech-tag">Web Development</span>
-<span class="tech-tag">Mobile Apps</span>
 <span class="tech-tag">Computer Vision</span>
-<span class="tech-tag">Teamwork</span>
+<span class="tech-tag">VR/AR</span>
+<span class="tech-tag">SDK Development</span>
+<span class="tech-tag">Camera Calibration</span>
+<span class="tech-tag">3D Video</span>
+</div>
+</div>
+
+<div class="experience-item">
+<div class="experience-number">5</div>
+<div class="experience-date">Aug 2016 — Nov 2017</div>
+<div class="experience-title">Senior Software Developer</div>
+<div class="experience-company">aapkapainter.com</div>
+<div class="experience-description">
+Joined as founding team member and developed Customer Relationship Management (CRM) and task management system along with sales and marketing automation platform using CodeIgniter. Built customer and vendor transaction module integrating with Razorpay payment gateway handling INR 10+ million monthly transactions. Built Flask-RESTful API to extract room wall measurements from floor plan images using Google Cloud Vision, Ocropus and Tesseract.
+</div>
+<div class="experience-tech">
+<span class="tech-tag">CodeIgniter</span>
+<span class="tech-tag">Flask</span>
+<span class="tech-tag">Payment Gateway</span>
+<span class="tech-tag">Computer Vision</span>
+<span class="tech-tag">CRM</span>
+</div>
+</div>
+
+<div class="experience-item">
+<div class="experience-number">6</div>
+<div class="experience-date">Apr 2015 — Mar 2016</div>
+<div class="experience-title">Project Lead</div>
+<div class="experience-company">TrackThisBus (Startup)</div>
+<div class="experience-description">
+Founded startup as part of Design Challenge hosted by Indian School of Business Hyderabad. Created fully working position-reporting system for local buses displaying real-time position without using GPS. Winner of Design Challenge by ISB Hyderabad. Pitched idea to Telangana IT minister and received seed funding offer from TSRTC (Telangana State Road Transport Corporation).
+</div>
+<div class="experience-tech">
+<span class="tech-tag">Startup</span>
+<span class="tech-tag">Real-time Systems</span>
+<span class="tech-tag">GPS Alternative</span>
+<span class="tech-tag">Public Transport</span>
+<span class="tech-tag">Leadership</span>
+</div>
+</div>
+
+<div class="experience-item">
+<div class="experience-number">7</div>
+<div class="experience-date">Jan 2015 — Jan 2016</div>
+<div class="experience-title">Quality Control and Management Coordinator</div>
+<div class="experience-company">Technozion, NIT Warangal</div>
+<div class="experience-description">
+Got ISO 9001:2008 certification and UNESCO patronage for Technozion 15, South India's second largest technical fest. The fest saw revenue of over 1.5 Crore INR (200k USD) from sponsorships and events. Was responsible for leading, coordination, quality control, risk management, blogging and management for various 150+ events during Technozion 15.
+</div>
+<div class="experience-tech">
+<span class="tech-tag">Event Management</span>
+<span class="tech-tag">Quality Control</span>
+<span class="tech-tag">Leadership</span>
+<span class="tech-tag">ISO Certification</span>
+<span class="tech-tag">Project Management</span>
 </div>
 </div>
 
@@ -146,7 +200,7 @@ Graduated with award-winning startup experience. Winner of Design Challenge by I
 <div class="experience-title">Technology Entrepreneurship Program</div>
 <div class="experience-company">Indian School of Business Hyderabad</div>
 <div class="experience-description">
-Participated in technology entrepreneurship programs focusing on startup development, business model creation, and product management. Gained hands-on experience in building scalable technology solutions and understanding market needs. Winner of Design Challenge by ISB Hyderabad.
+Participated in technology entrepreneurship programs focusing on startup development, business model creation, and product management. Winner of Design Challenge by ISB Hyderabad. Founded award-winning startup that built real-time position reporting system for buses without GPS. Pitched idea to Telangana IT minister and received seed funding offer from TSRTC.
 </div>
 <div class="experience-tech">
 <span class="tech-tag">Entrepreneurship</span>
@@ -163,7 +217,7 @@ Participated in technology entrepreneurship programs focusing on startup develop
 <div class="experience-title">Higher Secondary Education</div>
 <div class="experience-company">School Education</div>
 <div class="experience-description">
-Completed higher secondary education with focus on science and mathematics. Developed strong foundation in analytical thinking and problem-solving skills that later contributed to success in computer science and engineering.
+Completed higher secondary education with focus on science and mathematics. Developed strong foundation in analytical thinking and problem-solving skills that later contributed to success in computer science and engineering. Strong performance in Physics, Chemistry, and Mathematics.
 </div>
 <div class="experience-tech">
 <span class="tech-tag">Mathematics</span>
