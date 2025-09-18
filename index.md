@@ -20,7 +20,21 @@ I am a **Senior Software Engineer** at [Astronomer](https://www.astronomer.io/),
 
 As a strong advocate of open source and believer in "Learning by Doing," I have contributed to several high-impact projects including [Apache Airflow](https://github.com/apache/airflow), [Ask-Astro](https://github.com/astronomer/ask-astro), [Universal Transfer Operator](https://github.com/astronomer/apache-airflow-provider-transfers), [Astro-Python-SDK](https://github.com/astronomer/astro-sdk), [Astronomer-Providers](https://github.com/astronomer/astronomer-providers), and [OpenCV CVAT](https://github.com/openvinotoolkit/cvat).
 
-## Experience
+## 📋 Table of Contents
+
+<div class="table-of-contents">
+- [💼 Experience](#experience)
+- [🎓 Education](#education)
+- [🛠️ Skills & Expertise](#skills--expertise)
+- [🏆 Certifications](#certifications)
+- [🚀 Notable Projects](#notable-projects)
+- [🎯 Interests](#interests)
+- [📄 Resume](#resume)
+- [📰 Recent Updates](#recent-updates)
+- [📞 Contact](#contact)
+</div>
+
+## Experience {#experience}
 
 <div class="experience-timeline">
 
@@ -98,14 +112,14 @@ Started professional career with focus on web development and software engineeri
 
 <a href="https://www.linkedin.com/in/sunank200/" class="linkedin-link">📋 View detailed experience history on LinkedIn →</a>
 
-## Skills & Expertise
+## Skills & Expertise {#skills--expertise}
 
 **Programming Languages:** Python, C++, SQL, NoSQL  
 **Technologies:** Apache Airflow, Django, FastAPI, Kubernetes, Docker, Redis  
 **Domains:** Data Engineering, Analytics, Machine Learning, Computer Vision, MLOps  
 **Leadership:** Engineering team management, SDLC, Technical hiring, Open source contributions
 
-## Education
+## Education {#education}
 
 <div class="experience-timeline">
 
@@ -161,14 +175,14 @@ Completed higher secondary education with focus on science and mathematics. Deve
 
 </div>
 
-## Certifications
+## Certifications {#certifications}
 
 - **Astronomer Certification** - DAG Authoring for Apache Airflow (Jan 2022)
 - **Astronomer Certification** - Apache Airflow Fundamentals (Jan 2022)  
 - **Apache Airflow** - Udemy Certification (Jan 2021)
 - **SQL** - HackerRank Certification (Sep 2020)
 
-## Notable Projects
+## Notable Projects {#notable-projects}
 
 <div class="project-card">
 <div class="project-title">Ask-Astro</div>
@@ -224,15 +238,15 @@ Real-time dashboard integrating with COVID-19 Mobility Data Network and Facebook
 </div>
 </div>
 
-## Interests
+## Interests {#interests}
 
 I'm broadly interested in **Software Engineering**, **Data Engineering**, **Computer Vision**, and **Computer Systems**. I'm also a robotics enthusiast and was a Fellow at Teach for India. Always an aspiring polymath!
 
 ---
 
-**📄 [View my complete resume →](../resume/)**
+**📄 [View my complete resume →](../resume/)** {#resume}
 
-## Recent Updates
+## Recent Updates {#recent-updates}
 
 ### 2023
 - **December**: Presented "Data pipelines from ETL to ML to LLM: Powered by Apache Airflow" at Microsoft India Development Center Hyderabad with Vikram Koka, SVP of Engineering at Astronomer. [[Presentation]](https://docs.google.com/presentation/d/1ZC7c0ejtkbPkiz1oj2JH4cYBFHKe7H9p0mm0jWTbCco/edit?usp=sharing)
@@ -266,4 +280,29 @@ I'm broadly interested in **Software Engineering**, **Data Engineering**, **Comp
 
 ---
 
+## Contact {#contact}
+
 *For more details, connect with me on [LinkedIn](https://www.linkedin.com/in/sunank200/) • [View detailed professional experience →](https://www.linkedin.com/in/sunank200/)*
+
+<!-- Back to Top Button -->
+<a href="#" class="back-to-top" id="backToTop">↑</a>
+
+<script>
+// Back to Top Button Functionality
+window.addEventListener('scroll', function() {
+  const backToTop = document.getElementById('backToTop');
+  if (window.pageYOffset > 300) {
+    backToTop.classList.add('visible');
+  } else {
+    backToTop.classList.remove('visible');
+  }
+});
+
+document.getElementById('backToTop').addEventListener('click', function(e) {
+  e.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+</script>
