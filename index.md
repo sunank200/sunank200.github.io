@@ -22,32 +22,62 @@ As a strong advocate of open source and believer in "Learning by Doing," I have 
 
 ## Experience
 
-### Current Role - Astronomer (Dec 2022 - Present)
-- **Senior Software Engineer** working on Apache Airflow core platform and ecosystem
-- **Certified** in Astronomer DAG Authoring and Apache Airflow Fundamentals
-- Led development of **Ask-Astro**, an innovative LLM application integrating Apache Airflow with advanced AI technology
-- Contributed to **Universal Transfer Operator**, simplifying data transfer workflows and reducing 100+ operators to a single interface
-- Active contributor to multiple open-source projects: Apache Airflow, Astro-Python-SDK, Astronomer-Providers
-- **6K+ LinkedIn followers** and strong presence in the Apache Airflow community
+<div class="experience-timeline">
 
-### Previous Experience - Wadhwani AI (Feb 2019 - Dec 2022)
-- **Senior Software Engineer** leading engineering teams across healthcare and agriculture projects
-- Worked at [Wadhwani Institute for Artificial Intelligence](https://www.wadhwaniai.org) - an independent, non-profit research institute and global hub developing AI solutions for social good
-- I am more of a generalist with strong backend skills, enjoying work across all layers of the stack with a strong belief in automation
-- Built complete backend systems, microservices, and data pipelines for social impact solutions
-- **Key contributor** to pest management project that won Google's $2M AI Impact Challenge
-- **Demoed AI solutions to Sundar Pichai** at Google AI Impact Challenge Summit - a memorable moment showcasing our work to Google's CEO
-- Developed systems currently used by **11,000+ farmers** for pest management
-- Led annotation studio platform using Apache Airflow, FastAPI, and React
+<div class="experience-item">
+<div class="experience-number">1</div>
+<div class="experience-date">Dec 2022 — Present</div>
+<div class="experience-title">Senior Software Engineer</div>
+<div class="experience-company">Astronomer</div>
+<div class="experience-description">
+Working on Apache Airflow core platform and ecosystem. Led development of Ask-Astro, an innovative LLM application integrating Apache Airflow with advanced AI technology. Contributed to Universal Transfer Operator, simplifying data transfer workflows and reducing 100+ operators to a single interface. Active contributor to multiple open-source projects with strong community presence.
+</div>
+<div class="experience-tech">
+<span class="tech-tag">Python</span>
+<span class="tech-tag">Apache Airflow</span>
+<span class="tech-tag">Kubernetes</span>
+<span class="tech-tag">Docker</span>
+<span class="tech-tag">LLM</span>
+<span class="tech-tag">Open Source</span>
+</div>
+</div>
 
-### Earlier Career & Education
-- **B.Tech from NIT Warangal** (2012-2016) with award-winning startup experience
-- **Winner** of Design Challenge by Indian School of Business Hyderabad
-- Founded startup that built real-time position reporting system for buses without GPS
-- **Notable Projects**: Web crawler for alumni news, face detection systems, Uber ride reminder app
-- Worked on AR/VR camera applications, drone data analysis, and ML-based web solutions
-- **Fellow at Teach For India** - contributing to education and social impact
-- **Volunteer**: Red Cross Youth (Disaster Relief), SOS Children's Villages
+<div class="experience-item">
+<div class="experience-number">2</div>
+<div class="experience-date">Feb 2019 — Dec 2022</div>
+<div class="experience-title">Senior Software Engineer</div>
+<div class="experience-company">Wadhwani Institute for Artificial Intelligence</div>
+<div class="experience-description">
+Led engineering teams across healthcare and agriculture projects. Built complete backend systems, microservices, and data pipelines for social impact solutions. Key contributor to pest management project that won Google's $2M AI Impact Challenge. Demoed AI solutions to Sundar Pichai at Google AI Impact Challenge Summit. Developed systems currently used by 11,000+ farmers.
+</div>
+<div class="experience-tech">
+<span class="tech-tag">Python</span>
+<span class="tech-tag">Django</span>
+<span class="tech-tag">FastAPI</span>
+<span class="tech-tag">React</span>
+<span class="tech-tag">PyTorch</span>
+<span class="tech-tag">MLOps</span>
+</div>
+</div>
+
+<div class="experience-item">
+<div class="experience-number">3</div>
+<div class="experience-date">2012 — 2016</div>
+<div class="experience-title">B.Tech Computer Science</div>
+<div class="experience-company">NIT Warangal</div>
+<div class="experience-description">
+Graduated with award-winning startup experience. Winner of Design Challenge by Indian School of Business Hyderabad. Founded startup that built real-time position reporting system for buses without GPS. Worked on AR/VR camera applications, drone data analysis, and ML-based web solutions. Fellow at Teach For India contributing to education and social impact.
+</div>
+<div class="experience-tech">
+<span class="tech-tag">C++</span>
+<span class="tech-tag">Computer Vision</span>
+<span class="tech-tag">Machine Learning</span>
+<span class="tech-tag">Startup</span>
+<span class="tech-tag">Leadership</span>
+</div>
+</div>
+
+</div>
 
 ## Skills & Expertise
 
@@ -65,16 +95,59 @@ As a strong advocate of open source and believer in "Learning by Doing," I have 
 
 ## Notable Projects
 
-### Current Company Projects
-- **Ask-Astro**: LLM-powered chatbot for Apache Airflow community with RAG and Weaviate vector store, integrating Apache Airflow with advanced LLM technology to create a versatile chatbot and knowledge interface, leveraging Retrieval Augmented Generation and Weaviate vector store for enhanced AI-driven query response capabilities in Airflow and Astronomer domains
-- **Universal Transfer Operator**: Unified interface that simplifies how users transfer data from a source to a destination using Apache Airflow. It offers a consistent agnostic interface, improving the users' experience so they do not need to use explicitly specific providers or operators. This operator reduces the need for 100+ transfer operators to a single operator on Airflow
-- **Astronomer-Providers**: Open-source provider ecosystem for Apache Airflow
+<div class="project-card">
+<div class="project-title">Ask-Astro</div>
+<div class="project-description">
+LLM-powered chatbot for Apache Airflow community with RAG and Weaviate vector store. Integrates Apache Airflow with advanced LLM technology to create a versatile chatbot and knowledge interface, leveraging Retrieval Augmented Generation for enhanced AI-driven query response capabilities.
+</div>
+<div class="project-tech">
+<span class="tech-tag">Python</span>
+<span class="tech-tag">Apache Airflow</span>
+<span class="tech-tag">LLM</span>
+<span class="tech-tag">RAG</span>
+<span class="tech-tag">Weaviate</span>
+</div>
+</div>
 
-### Previous Technical Projects
-- **Pest Management System**: PyTorch-based model running on phone/cloud to identify harmful pests, alert farmers about infestation and reduce crop loss in cotton farming. Currently used by 11,000+ farmers
-- **COVID-19 Mobility Dashboard**: Real-time dashboard integrating with COVID-19 Mobility Data Network and Facebook Data For Good, enabling 11 state government authorities in India with actionable insights to optimize emergency protocols
-- **Annotation Studio**: Data (artifacts and annotation) management and job orchestration platform to manage, schedule and orchestrate annotation jobs across multiple annotation vendors using Apache Airflow, FastAPI and React
-- **Real-time Route Planning**: Multi-modal transport optimization using modified NSGA-II algorithm
+<div class="project-card">
+<div class="project-title">Universal Transfer Operator</div>
+<div class="project-description">
+Unified interface that simplifies data transfer workflows in Apache Airflow. Offers a consistent agnostic interface, improving user experience by reducing the need for 100+ transfer operators to a single operator on Airflow.
+</div>
+<div class="project-tech">
+<span class="tech-tag">Python</span>
+<span class="tech-tag">Apache Airflow</span>
+<span class="tech-tag">Data Engineering</span>
+<span class="tech-tag">ETL</span>
+</div>
+</div>
+
+<div class="project-card">
+<div class="project-title">Pest Management System</div>
+<div class="project-description">
+PyTorch-based model running on phone/cloud to identify harmful pests, alert farmers about infestation and reduce crop loss in cotton farming. Currently used by 11,000+ farmers and contributed to winning Google's $2M AI Impact Challenge.
+</div>
+<div class="project-tech">
+<span class="tech-tag">PyTorch</span>
+<span class="tech-tag">Computer Vision</span>
+<span class="tech-tag">Mobile</span>
+<span class="tech-tag">Agriculture</span>
+<span class="tech-tag">AI for Good</span>
+</div>
+</div>
+
+<div class="project-card">
+<div class="project-title">COVID-19 Mobility Dashboard</div>
+<div class="project-description">
+Real-time dashboard integrating with COVID-19 Mobility Data Network and Facebook Data For Good, enabling 11 state government authorities in India with actionable insights to optimize emergency protocols during the pandemic.
+</div>
+<div class="project-tech">
+<span class="tech-tag">Python</span>
+<span class="tech-tag">Data Visualization</span>
+<span class="tech-tag">Dashboard</span>
+<span class="tech-tag">Public Health</span>
+</div>
+</div>
 
 ## Interests
 

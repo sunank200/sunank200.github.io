@@ -690,6 +690,54 @@ table tr td {
 
 /* ===== PHASE 3: MODERN DESIGN ENHANCEMENTS ===== */
 
+/* Modern Layout Inspired by Best Practices */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Enhanced Header and Navigation */
+.site-header {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e1e8ed;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+/* Modern Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 80px 0 60px 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: #7f8c8d;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  color: #34495e;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
 /* Enhanced Button Styles */
 .btn {
   display: inline-block;
@@ -735,6 +783,143 @@ table tr td {
   padding: 40px 20px;
 }
 
+/* Modern Experience Timeline */
+.experience-timeline {
+  position: relative;
+  padding: 40px 0;
+}
+
+.experience-item {
+  position: relative;
+  padding: 30px 0;
+  border-left: 2px solid #e1e8ed;
+  margin-left: 20px;
+  padding-left: 40px;
+}
+
+.experience-item:before {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 40px;
+  width: 14px;
+  height: 14px;
+  background: #3498db;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 0 3px #e1e8ed;
+}
+
+.experience-item:last-child {
+  border-left: none;
+}
+
+.experience-number {
+  position: absolute;
+  left: -60px;
+  top: 30px;
+  background: #3498db;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.experience-date {
+  color: #7f8c8d;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.experience-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+.experience-company {
+  color: #3498db;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.experience-description {
+  color: #34495e;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.experience-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.tech-tag {
+  background: #ecf0f1;
+  color: #2c3e50;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Modern Project Cards */
+.project-card {
+  background: #ffffff;
+  border: 1px solid #e1e8ed;
+  border-radius: 12px;
+  padding: 30px;
+  margin: 30px 0;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border-color: #3498db;
+}
+
+.project-card:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #3498db, #2980b9);
+}
+
+.project-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.project-description {
+  color: #34495e;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+}
+
 /* Modern Card-like Sections */
 .experience-section, .projects-section, .skills-section {
   background: #f8f9fa;
@@ -776,6 +961,39 @@ hr {
   .experience-section, .projects-section, .skills-section {
     padding: 20px;
     margin: 20px 0;
+  }
+  
+  /* Mobile Hero Section */
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+  .hero-description {
+    font-size: 1rem;
+  }
+  
+  /* Mobile Experience Timeline */
+  .experience-item {
+    margin-left: 10px;
+    padding-left: 30px;
+  }
+  .experience-number {
+    left: -50px;
+    width: 35px;
+    height: 35px;
+    font-size: 12px;
+  }
+  
+  /* Mobile Project Cards */
+  .project-card {
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  .container {
+    padding: 0 15px;
   }
 }
 
