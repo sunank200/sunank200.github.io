@@ -83,12 +83,87 @@ To run this website locally:
    bundle install
    ```
 
-3. **Run locally:**
+3. **Install Node.js dependencies (for static checks):**
+   ```bash
+   npm install
+   ```
+
+4. **Run locally:**
    ```bash
    bundle exec jekyll serve
    ```
 
-4. **View at:** `http://localhost:4000`
+5. **View at:** `http://localhost:4000`
+
+## 🔍 Quality Assurance & Static Checks
+
+This repository includes comprehensive static analysis and quality checks to ensure code quality, spelling accuracy, and best practices.
+
+### 🛠️ Available Checks
+
+- **Spelling & Grammar** - cspell with custom dictionary for technical terms
+- **CSS Validation** - stylelint with standard configuration
+- **Markdown Linting** - markdownlint with custom rules
+- **YAML Validation** - yamllint for configuration files
+- **HTML Validation** - html-validate for accessibility and standards
+- **Security Scanning** - Trivy vulnerability scanner
+- **Accessibility Check** - pa11y for WCAG compliance
+- **Performance Check** - Lighthouse CI for performance metrics
+- **Link Check** - Validates all internal and external links
+- **Build Test** - Ensures Jekyll builds successfully
+
+### 🚀 Running Checks Locally
+
+```bash
+# Run all checks
+npm run test-all
+
+# Run individual checks
+npm run spell-check      # Spelling and grammar
+npm run css-lint         # CSS validation
+npm run markdown-lint    # Markdown linting
+npm run yaml-lint        # YAML validation
+npm run html-validate    # HTML validation (after build)
+
+# Fix auto-fixable issues
+npm run lint-fix         # CSS and Markdown fixes
+npm run css-lint-fix     # CSS fixes only
+npm run markdown-lint-fix # Markdown fixes only
+```
+
+### 🔧 Pre-commit Hook
+
+Install the pre-commit hook for automatic checks:
+
+```bash
+# Make the script executable (already done)
+chmod +x scripts/pre-commit.sh
+
+# Run manually before committing
+./scripts/pre-commit.sh
+
+# Or set up as git hook
+ln -s ../../scripts/pre-commit.sh .git/hooks/pre-commit
+```
+
+### 📊 GitHub Actions
+
+The repository includes a comprehensive GitHub Actions workflow (`.github/workflows/static-checks.yml`) that runs:
+
+- **On every push** to master/main branches
+- **On pull requests** to master/main branches  
+- **Weekly scheduled runs** (Sundays at 2 AM UTC)
+
+The workflow provides a detailed quality report with pass/fail status for all checks.
+
+### 🎯 Configuration Files
+
+- `cspell.json` - Spelling configuration with technical terms
+- `.stylelintrc.json` - CSS linting rules
+- `.markdownlint.json` - Markdown formatting rules
+- `.yamllint` - YAML validation rules
+- `.htmlvalidate.json` - HTML validation and accessibility rules
+- `package.json` - Node.js dependencies and scripts
 
 ## 📝 Content Management
 

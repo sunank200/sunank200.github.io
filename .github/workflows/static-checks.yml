@@ -1,0 +1,786 @@
+name: Static Checks & Quality Assurance
+
+on:
+  push:
+    branches: [ master, main ]
+  pull_request:
+    branches: [ master, main ]
+  schedule:
+    # Run weekly on Sundays at 2 AM UTC
+    - cron: '0 2 * * 0'
+
+jobs:
+  spelling-check:
+    name: Spelling & Grammar Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install cspell
+        run: npm install -g cspell
+
+      - name: Create cspell config
+        run: |
+          cat > cspell.json << 'EOF'
+          {
+            "version": "0.2",
+            "language": "en",
+            "words": [
+              "Jekyll",
+              "Astronomer",
+              "Wadhwani",
+              "DreamVu",
+              "aapkapainter",
+              "TrackThisBus",
+              "Technozion",
+              "NIT",
+              "Warangal",
+              "ISB",
+              "Hyderabad",
+              "SOS",
+              "Hermann",
+              "Gmeiner",
+              "Bharatpur",
+              "Nepal",
+              "Apache",
+              "Airflow",
+              "LangChain",
+              "PyTorch",
+              "FastAPI",
+              "Django",
+              "React",
+              "CodeIgniter",
+              "Flask",
+              "Razorpay",
+              "Tesseract",
+              "Ocropus",
+              "Haar",
+              "TSRTC",
+              "Telangana",
+              "SRI",
+              "ODK",
+              "LabelMe",
+              "CVAT",
+              "Redis",
+              "SES",
+              "Cognito",
+              "OAuth",
+              "Sundar",
+              "Pichai",
+              "Google",
+              "Microsoft",
+              "AWS",
+              "GCP",
+              "SIGKDD",
+              "KDD",
+              "ICML",
+              "UNESCO",
+              "ISO",
+              "ATIS",
+              "GPS",
+              "VR",
+              "AR",
+              "SDK",
+              "API",
+              "RESTful",
+              "SEO",
+              "SEM",
+              "CRM",
+              "ETL",
+              "ML",
+              "LLM",
+              "AskAstro",
+              "deferrable",
+              "asyncio",
+              "concurrency",
+              "microservices",
+              "geospatial",
+              "buffering",
+              "infestation",
+              "mobility",
+              "protocols",
+              "analytics",
+              "dashboard",
+              "pipeline",
+              "annotation",
+              "orchestration",
+              "authentication",
+              "calibration",
+              "intrinsic",
+              "extrinsic",
+              "acquisition",
+              "processing",
+              "streaming",
+              "visualizer",
+              "texture",
+              "classifier",
+              "measurements",
+              "floorplan",
+              "vendor",
+              "transaction",
+              "gateway",
+              "marketing",
+              "automation",
+              "relationship",
+              "management",
+              "coordination",
+              "certification",
+              "patronage",
+              "sponsorships",
+              "stakeholders",
+              "compliance",
+              "robotics",
+              "championship",
+              "innovation",
+              "garage",
+              "entrepreneurship",
+              "startup",
+              "pitching",
+              "funding",
+              "seed",
+              "minister",
+              "corporation",
+              "transportation",
+              "positioning",
+              "reporting",
+              "tracking",
+              "multimodal",
+              "traveler",
+              "information",
+              "system",
+              "algorithm",
+              "computational",
+              "biology",
+              "thesis",
+              "poster",
+              "presentation",
+              "summit",
+              "conference",
+              "workshop",
+              "abstract",
+              "outcomes",
+              "practitioners",
+              "deployment",
+              "operationalize",
+              "applicable",
+              "leverages",
+              "deployed",
+              "slack",
+              "non-practitioners",
+              "high-level",
+              "challenges",
+              "leverage",
+              "existing",
+              "teams",
+              "applications",
+              "scenario",
+              "worker",
+              "slots",
+              "available",
+              "tasks",
+              "sensor",
+              "running",
+              "idle",
+              "cluster",
+              "essentially",
+              "elegant",
+              "solution",
+              "async",
+              "operators",
+              "triggers",
+              "introduction",
+              "real-world",
+              "implementation",
+              "strategies",
+              "custom",
+              "example",
+              "advantages",
+              "smart",
+              "sensors",
+              "reschedule",
+              "mode",
+              "guide",
+              "astronomer-providers",
+              "repository",
+              "concepts",
+              "python",
+              "asyncio",
+              "concurrency",
+              "multimodal",
+              "transport",
+              "network",
+              "advanced",
+              "traveler",
+              "information",
+              "system",
+              "algorithm",
+              "real-time",
+              "planning",
+              "via",
+              "computational",
+              "biology",
+              "thesis",
+              "poster",
+              "presentation",
+              "summit",
+              "conference",
+              "workshop",
+              "abstract",
+              "outcomes",
+              "practitioners",
+              "deployment",
+              "operationalize",
+              "applicable",
+              "leverages",
+              "deployed",
+              "slack",
+              "non-practitioners",
+              "high-level",
+              "challenges",
+              "leverage",
+              "existing",
+              "teams",
+              "applications",
+              "scenario",
+              "worker",
+              "slots",
+              "available",
+              "tasks",
+              "sensor",
+              "running",
+              "idle",
+              "cluster",
+              "essentially",
+              "elegant",
+              "solution",
+              "async",
+              "operators",
+              "triggers",
+              "introduction",
+              "real-world",
+              "implementation",
+              "strategies",
+              "custom",
+              "example",
+              "advantages",
+              "smart",
+              "sensors",
+              "reschedule",
+              "mode",
+              "guide",
+              "astronomer-providers",
+              "repository",
+              "concepts",
+              "python",
+              "asyncio",
+              "concurrency"
+            ],
+            "ignoreWords": [
+              "github",
+              "githubio",
+              "sunank",
+              "ankit",
+              "chaurasia",
+              "vishal",
+              "agarwal",
+              "daattali",
+              "beautiful-jekyll"
+            ],
+            "import": [
+              "node_modules/cspell-dict-html/cspell-ext.json",
+              "node_modules/cspell-dict-css/cspell-ext.json",
+              "node_modules/cspell-dict-javascript/cspell-ext.json",
+              "node_modules/cspell-dict-markdown/cspell-ext.json"
+            ]
+          }
+          EOF
+
+      - name: Run spelling check
+        run: |
+          cspell "**/*.{md,html,css,js,yml,yaml}" --config cspell.json --no-progress
+
+  html-validation:
+    name: HTML Validation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.0'
+          bundler-cache: true
+
+      - name: Install Jekyll
+        run: |
+          gem install jekyll bundler
+          bundle install
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+
+      - name: Install html-validate
+        run: npm install -g html-validate
+
+      - name: Create html-validate config
+        run: |
+          cat > .htmlvalidate.json << 'EOF'
+          {
+            "extends": ["html-validate:recommended"],
+            "rules": {
+              "no-missing-require": "off",
+              "no-inline-style": "warn",
+              "no-raw-content": "off",
+              "require-sri": "off",
+              "no-trailing-whitespace": "error",
+              "no-multiple-empty-lines": "error",
+              "void-content": "error",
+              "no-self-closing": "error",
+              "no-dup-attr": "error",
+              "no-dup-class": "error",
+              "no-dup-id": "error",
+              "no-missing-attr": "error",
+              "no-missing-require": "off",
+              "no-redundant-attr": "error",
+              "no-redundant-for": "error",
+              "no-redundant-role": "error",
+              "no-unknown-elements": "error",
+              "no-unused-disable": "error",
+              "no-unused-enable": "error",
+              "prefer-button": "error",
+              "prefer-native-element": "error",
+              "require-accessible-name": "error",
+              "require-alt": "error",
+              "require-button-type": "error",
+              "require-doctype": "error",
+              "require-frame-title": "error",
+              "require-img-alt": "error",
+              "require-input-label": "error",
+              "require-lang": "error",
+              "require-meta-charset": "error",
+              "require-meta-description": "error",
+              "require-meta-viewport": "error",
+              "require-sri": "off",
+              "require-title": "error",
+              "require-valid-aria": "error",
+              "wcag/h30": "error",
+              "wcag/h32": "error",
+              "wcag/h36": "error",
+              "wcag/h37": "error",
+              "wcag/h44": "error",
+              "wcag/h67": "error",
+              "wcag/h71": "error"
+            }
+          }
+          EOF
+
+      - name: Validate HTML
+        run: html-validate _site/**/*.html
+
+  css-validation:
+    name: CSS Validation & Linting
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install stylelint
+        run: npm install -g stylelint stylelint-config-standard
+
+      - name: Create stylelint config
+        run: |
+          cat > .stylelintrc.json << 'EOF'
+          {
+            "extends": ["stylelint-config-standard"],
+            "rules": {
+              "color-no-invalid-hex": true,
+              "font-family-no-duplicate-names": true,
+              "font-family-no-missing-generic-family-keyword": true,
+              "function-calc-no-unspaced-operator": true,
+              "string-no-newline": true,
+              "unit-no-unknown": true,
+              "property-no-unknown": true,
+              "keyframe-declaration-no-important": true,
+              "declaration-block-no-duplicate-properties": true,
+              "declaration-block-no-redundant-longhand-properties": true,
+              "block-no-empty": true,
+              "selector-pseudo-class-no-unknown": true,
+              "selector-pseudo-element-no-unknown": true,
+              "selector-type-no-unknown": true,
+              "media-feature-name-no-unknown": true,
+              "at-rule-no-unknown": true,
+              "comment-no-empty": true,
+              "no-duplicate-at-import-rules": true,
+              "no-duplicate-selectors": true,
+              "no-empty-source": true,
+              "no-extra-semicolons": true,
+              "no-invalid-double-slash-comments": true,
+              "color-hex-case": "lower",
+              "color-hex-length": "short",
+              "color-named": "never",
+              "function-comma-space-after": "always",
+              "function-comma-space-before": "never",
+              "function-max-empty-lines": 0,
+              "function-name-case": "lower",
+              "function-parentheses-space-inside": "never",
+              "function-url-quotes": "always",
+              "function-whitespace-after": "always",
+              "number-leading-zero": "always",
+              "number-no-trailing-zeros": true,
+              "string-quotes": "double",
+              "length-zero-no-unit": true,
+              "unit-case": "lower",
+              "value-list-comma-space-after": "always",
+              "value-list-comma-space-before": "never",
+              "value-list-max-empty-lines": 0,
+              "property-case": "lower",
+              "property-no-vendor-prefix": true,
+              "declaration-bang-space-after": "never",
+              "declaration-bang-space-before": "always",
+              "declaration-colon-space-after": "always",
+              "declaration-colon-space-before": "never",
+              "declaration-empty-line-before": "never",
+              "declaration-no-important": true,
+              "declaration-block-semicolon-newline-after": "always",
+              "declaration-block-semicolon-space-before": "never",
+              "declaration-block-single-line-max-declarations": 1,
+              "declaration-block-trailing-semicolon": "always",
+              "block-closing-brace-empty-line-before": "never",
+              "block-closing-brace-newline-after": "always",
+              "block-closing-brace-newline-before": "always-multi-line",
+              "block-closing-brace-space-before": "always-single-line",
+              "block-opening-brace-newline-after": "always-multi-line",
+              "block-opening-brace-space-after": "always-single-line",
+              "block-opening-brace-space-before": "always",
+              "selector-attribute-brackets-space-inside": "never",
+              "selector-attribute-operator-space-after": "never",
+              "selector-attribute-operator-space-before": "never",
+              "selector-attribute-quotes": "always",
+              "selector-combinator-space-after": "always",
+              "selector-combinator-space-before": "always",
+              "selector-descendant-combinator-no-non-space": true,
+              "selector-max-empty-lines": 0,
+              "selector-pseudo-class-case": "lower",
+              "selector-pseudo-class-parentheses-space-inside": "never",
+              "selector-pseudo-element-case": "lower",
+              "selector-pseudo-element-colon-notation": "double",
+              "selector-type-case": "lower",
+              "selector-list-comma-newline-after": "always",
+              "selector-list-comma-space-before": "never",
+              "rule-empty-line-before": "always-multi-line",
+              "media-feature-colon-space-after": "always",
+              "media-feature-colon-space-before": "never",
+              "media-feature-name-case": "lower",
+              "media-feature-parentheses-space-inside": "never",
+              "media-feature-range-operator-space-after": "always",
+              "media-feature-range-operator-space-before": "always",
+              "media-query-list-comma-newline-after": "always-multi-line",
+              "media-query-list-comma-space-after": "always-single-line",
+              "media-query-list-comma-space-before": "never",
+              "at-rule-empty-line-before": "always",
+              "at-rule-name-case": "lower",
+              "at-rule-name-space-after": "always-single-line",
+              "at-rule-semicolon-newline-after": "always",
+              "at-rule-semicolon-space-before": "never",
+              "comment-empty-line-before": "always",
+              "comment-whitespace-inside": "always",
+              "indentation": 2,
+              "linebreaks": "unix",
+              "max-empty-lines": 1,
+              "max-line-length": 120,
+              "no-eol-whitespace": true,
+              "no-missing-end-of-source-newline": true,
+              "unicode-bom": "never"
+            }
+          }
+          EOF
+
+      - name: Lint CSS
+        run: stylelint "css/**/*.css"
+
+  markdown-linting:
+    name: Markdown Linting
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install markdownlint
+        run: npm install -g markdownlint-cli
+
+      - name: Create markdownlint config
+        run: |
+          cat > .markdownlint.json << 'EOF'
+          {
+            "MD013": {
+              "line_length": 120,
+              "code_blocks": false,
+              "tables": false
+            },
+            "MD024": false,
+            "MD033": false,
+            "MD041": false,
+            "MD029": {
+              "style": "ordered"
+            },
+            "MD007": {
+              "indent": 2
+            },
+            "MD012": {
+              "maximum": 1
+            },
+            "MD022": false,
+            "MD025": false,
+            "MD026": {
+              "punctuation": ".,;:!"
+            },
+            "MD031": false,
+            "MD032": false,
+            "MD036": false,
+            "MD040": false,
+            "MD047": false
+          }
+          EOF
+
+      - name: Lint Markdown
+        run: markdownlint "**/*.md" --config .markdownlint.json
+
+  yaml-validation:
+    name: YAML Validation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install yamllint
+        run: pip install yamllint
+
+      - name: Create yamllint config
+        run: |
+          cat > .yamllint << 'EOF'
+          extends: default
+          rules:
+            line-length:
+              max: 120
+              level: warning
+            indentation:
+              spaces: 2
+            comments:
+              min-spaces-from-content: 1
+            document-start:
+              present: false
+            truthy:
+              allowed-values: ['true', 'false', 'on', 'off']
+          EOF
+
+      - name: Validate YAML
+        run: yamllint -c .yamllint .
+
+  security-scan:
+    name: Security Scan
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run Trivy vulnerability scanner
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: 'fs'
+          scan-ref: '.'
+          format: 'sarif'
+          output: 'trivy-results.sarif'
+
+      - name: Upload Trivy scan results to GitHub Security tab
+        uses: github/codeql-action/upload-sarif@v2
+        if: always()
+        with:
+          sarif_file: 'trivy-results.sarif'
+
+  accessibility-check:
+    name: Accessibility Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.0'
+          bundler-cache: true
+
+      - name: Install Jekyll
+        run: |
+          gem install jekyll bundler
+          bundle install
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install pa11y
+        run: npm install -g pa11y
+
+      - name: Run accessibility tests
+        run: |
+          # Test main pages for accessibility
+          pa11y --standard WCAG2AA --reporter cli _site/index.html || true
+          pa11y --standard WCAG2AA --reporter cli _site/publications/index.html || true
+          pa11y --standard WCAG2AA --reporter cli _site/talks/index.html || true
+
+  performance-check:
+    name: Performance Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.0'
+          bundler-cache: true
+
+      - name: Install Jekyll
+        run: |
+          gem install jekyll bundler
+          bundle install
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install lighthouse-ci
+        run: npm install -g @lhci/cli@0.12.x
+
+      - name: Run Lighthouse CI
+        run: |
+          lhci autorun --upload.target=temporary-public-storage || true
+
+  link-check:
+    name: Link Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.0'
+          bundler-cache: true
+
+      - name: Install Jekyll
+        run: |
+          gem install jekyll bundler
+          bundle install
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install linkchecker
+        run: npm install -g linkchecker
+
+      - name: Check links
+        run: |
+          linkchecker --check-extern --no-robots --ignore-url="^mailto:" _site/ || true
+
+  build-test:
+    name: Build Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.0'
+          bundler-cache: true
+
+      - name: Install Jekyll
+        run: |
+          gem install jekyll bundler
+          bundle install
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+
+      - name: Check build output
+        run: |
+          if [ ! -d "_site" ]; then
+            echo "Build failed: _site directory not created"
+            exit 1
+          fi
+          
+          if [ ! -f "_site/index.html" ]; then
+            echo "Build failed: index.html not generated"
+            exit 1
+          fi
+          
+          echo "Build successful: Site generated correctly"
+          ls -la _site/
+
+  quality-report:
+    name: Quality Report
+    runs-on: ubuntu-latest
+    needs: [spelling-check, html-validation, css-validation, markdown-linting, yaml-validation, security-scan, accessibility-check, performance-check, link-check, build-test]
+    if: always()
+    steps:
+      - name: Generate Quality Report
+        run: |
+          echo "## 🔍 Quality Assurance Report" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Check | Status |" >> $GITHUB_STEP_SUMMARY
+          echo "|-------|--------|" >> $GITHUB_STEP_SUMMARY
+          echo "| Spelling & Grammar | ${{ needs.spelling-check.result == 'success' && '✅ Pass' || '❌ Fail' }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| HTML Validation | ${{ needs.html-validation.result == 'success' && '✅ Pass' || '❌ Fail' }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| CSS Validation | ${{ needs.css-validation.result == 'success' && '✅ Pass' || '❌ Fail' }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Markdown Linting | ${{ needs.markdown-linting.result == 'success' && '✅ Pass' || '❌ Fail' }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| YAML Validation | ${{ needs.yaml-validation.result == 'success' && '✅ Pass' || '❌ Fail' }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Security Scan | ${{ needs.security-scan.result == 'success' && '✅ Pass' || '❌ Fail' }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Accessibility Check | ${{ needs.accessibility-check.result == 'success' && '✅ Pass' || '❌ Fail' }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Performance Check | ${{ needs.performance-check.result == 'success' && '✅ Pass' || '❌ Fail' }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Link Check | ${{ needs.link-check.result == 'success' && '✅ Pass' || '❌ Fail' }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Build Test | ${{ needs.build-test.result == 'success' && '✅ Pass' || '❌ Fail' }} |" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### 📊 Summary" >> $GITHUB_STEP_SUMMARY
+          echo "- **Total Checks:** 10" >> $GITHUB_STEP_SUMMARY
+          echo "- **Passed:** $(echo '${{ needs.spelling-check.result == 'success' && '1' || '0' }} ${{ needs.html-validation.result == 'success' && '1' || '0' }} ${{ needs.css-validation.result == 'success' && '1' || '0' }} ${{ needs.markdown-linting.result == 'success' && '1' || '0' }} ${{ needs.yaml-validation.result == 'success' && '1' || '0' }} ${{ needs.security-scan.result == 'success' && '1' || '0' }} ${{ needs.accessibility-check.result == 'success' && '1' || '0' }} ${{ needs.performance-check.result == 'success' && '1' || '0' }} ${{ needs.link-check.result == 'success' && '1' || '0' }} ${{ needs.build-test.result == 'success' && '1' || '0' }}' | tr ' ' '+' | bc)" >> $GITHUB_STEP_SUMMARY
+          echo "- **Failed:** $(echo '10 - $(echo '${{ needs.spelling-check.result == 'success' && '1' || '0' }} ${{ needs.html-validation.result == 'success' && '1' || '0' }} ${{ needs.css-validation.result == 'success' && '1' || '0' }} ${{ needs.markdown-linting.result == 'success' && '1' || '0' }} ${{ needs.yaml-validation.result == 'success' && '1' || '0' }} ${{ needs.security-scan.result == 'success' && '1' || '0' }} ${{ needs.accessibility-check.result == 'success' && '1' || '0' }} ${{ needs.performance-check.result == 'success' && '1' || '0' }} ${{ needs.link-check.result == 'success' && '1' || '0' }} ${{ needs.build-test.result == 'success' && '1' || '0' }}' | tr ' ' '+' | bc)" >> $GITHUB_STEP_SUMMARY

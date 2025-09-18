@@ -1,0 +1,54 @@
+{
+  "name": "ankit-chaurasia-website",
+  "version": "0.0.1",
+  "description": "Personal website for Ankit Chaurasia - Senior Software Engineer at Astronomer",
+  "main": "index.js",
+  "scripts": {
+    "spell-check": "cspell \"**/*.{md,html,css,js,yml,yaml}\" --config cspell.json",
+    "spell-check-fix": "cspell \"**/*.{md,html,css,js,yml,yaml}\" --config cspell.json --no-progress",
+    "css-lint": "stylelint \"css/**/*.css\"",
+    "css-lint-fix": "stylelint \"css/**/*.css\" --fix",
+    "markdown-lint": "markdownlint \"**/*.md\" --config .markdownlint.json",
+    "markdown-lint-fix": "markdownlint \"**/*.md\" --config .markdownlint.json --fix",
+    "yaml-lint": "yamllint -c .yamllint .",
+    "html-validate": "html-validate _site/**/*.html",
+    "build": "bundle exec jekyll build",
+    "serve": "bundle exec jekyll serve",
+    "test": "npm run spell-check && npm run css-lint && npm run markdown-lint && npm run yaml-lint",
+    "test-all": "npm run test && npm run build && npm run html-validate",
+    "lint": "npm run css-lint && npm run markdown-lint",
+    "lint-fix": "npm run css-lint-fix && npm run markdown-lint-fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunank200/sunank200.github.io.git"
+  },
+  "keywords": [
+    "jekyll",
+    "website",
+    "portfolio",
+    "personal",
+    "astronomer",
+    "apache-airflow",
+    "software-engineer",
+    "open-source"
+  ],
+  "author": "Ankit Chaurasia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sunank200/sunank200.github.io/issues"
+  },
+  "homepage": "https://ankitchaurasia.info",
+  "devDependencies": {
+    "cspell": "^8.0.0",
+    "stylelint": "^16.0.0",
+    "stylelint-config-standard": "^36.0.0",
+    "markdownlint-cli": "^0.38.0",
+    "html-validate": "^8.0.0",
+    "yamllint": "^1.35.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "ruby": ">=3.0.0"
+  }
+}
