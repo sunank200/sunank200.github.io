@@ -22,9 +22,7 @@ As a strong advocate of open source and believer in "Learning by Doing," I have 
 
 ## Experience
 
-<div class="experience-section">
-
-**Current Role - Astronomer (Dec 2022 - Present)**
+### Current Role - Astronomer (Dec 2022 - Present)
 - **Senior Software Engineer** working on Apache Airflow core platform and ecosystem
 - **Certified** in Astronomer DAG Authoring and Apache Airflow Fundamentals
 - Led development of **Ask-Astro**, an innovative LLM application integrating Apache Airflow with advanced AI technology
@@ -32,7 +30,7 @@ As a strong advocate of open source and believer in "Learning by Doing," I have 
 - Active contributor to multiple open-source projects: Apache Airflow, Astro-Python-SDK, Astronomer-Providers
 - **6K+ LinkedIn followers** and strong presence in the Apache Airflow community
 
-**Previous Experience - Wadhwani AI (Feb 2019 - Dec 2022)**
+### Previous Experience - Wadhwani AI (Feb 2019 - Dec 2022)
 - **Senior Software Engineer** leading engineering teams across healthcare and agriculture projects
 - Worked at [Wadhwani Institute for Artificial Intelligence](https://www.wadhwaniai.org) - an independent, non-profit research institute and global hub developing AI solutions for social good
 - I am more of a generalist with strong backend skills, enjoying work across all layers of the stack with a strong belief in automation
@@ -42,7 +40,7 @@ As a strong advocate of open source and believer in "Learning by Doing," I have 
 - Developed systems currently used by **11,000+ farmers** for pest management
 - Led annotation studio platform using Apache Airflow, FastAPI, and React
 
-**Earlier Career & Education**
+### Earlier Career & Education
 - **B.Tech from NIT Warangal** (2012-2016) with award-winning startup experience
 - **Winner** of Design Challenge by Indian School of Business Hyderabad
 - Founded startup that built real-time position reporting system for buses without GPS
@@ -50,8 +48,6 @@ As a strong advocate of open source and believer in "Learning by Doing," I have 
 - Worked on AR/VR camera applications, drone data analysis, and ML-based web solutions
 - **Fellow at Teach For India** - contributing to education and social impact
 - **Volunteer**: Red Cross Youth (Disaster Relief), SOS Children's Villages
-
-</div>
 
 ## Skills & Expertise
 
@@ -69,20 +65,16 @@ As a strong advocate of open source and believer in "Learning by Doing," I have 
 
 ## Notable Projects
 
-<div class="projects-section">
-
-**Current Company Projects:**
+### Current Company Projects
 - **Ask-Astro**: LLM-powered chatbot for Apache Airflow community with RAG and Weaviate vector store, integrating Apache Airflow with advanced LLM technology to create a versatile chatbot and knowledge interface, leveraging Retrieval Augmented Generation and Weaviate vector store for enhanced AI-driven query response capabilities in Airflow and Astronomer domains
 - **Universal Transfer Operator**: Unified interface that simplifies how users transfer data from a source to a destination using Apache Airflow. It offers a consistent agnostic interface, improving the users' experience so they do not need to use explicitly specific providers or operators. This operator reduces the need for 100+ transfer operators to a single operator on Airflow
 - **Astronomer-Providers**: Open-source provider ecosystem for Apache Airflow
 
-**Previous Technical Projects:**
+### Previous Technical Projects
 - **Pest Management System**: PyTorch-based model running on phone/cloud to identify harmful pests, alert farmers about infestation and reduce crop loss in cotton farming. Currently used by 11,000+ farmers
 - **COVID-19 Mobility Dashboard**: Real-time dashboard integrating with COVID-19 Mobility Data Network and Facebook Data For Good, enabling 11 state government authorities in India with actionable insights to optimize emergency protocols
 - **Annotation Studio**: Data (artifacts and annotation) management and job orchestration platform to manage, schedule and orchestrate annotation jobs across multiple annotation vendors using Apache Airflow, FastAPI and React
 - **Real-time Route Planning**: Multi-modal transport optimization using modified NSGA-II algorithm
-
-</div>
 
 ## Interests
 
