@@ -297,46 +297,6 @@ jobs:
           echo "Build successful: Site generated correctly"
           ls -la _site/
 
-  quality-report:
-    name: Quality Report
-    runs-on: ubuntu-latest
-    needs:
-      [
-        spelling-check,
-        css-validation,
-        markdown-linting,
-        yaml-validation,
-        security-scan,
-        accessibility-check,
-        performance-check,
-        link-check,
-        build-test,
-        deploy,
-      ]
-    if: always()
-    steps:
-      - name: Generate Quality Report
-        run: |
-          echo "## 🔍 Quality Assurance Report" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "| Check | Status |" >> $GITHUB_STEP_SUMMARY
-          echo "|-------|--------|" >> $GITHUB_STEP_SUMMARY
-          echo "| Spelling & Grammar | ${{ needs.spelling-check.result == 'success' && '✅ Pass' || '❌ Fail' }} |" >> $GITHUB_STEP_SUMMARY
-          echo "| CSS Validation | ${{ needs.css-validation.result == 'success' && '✅ Pass' || '❌ Fail' }} |" >> $GITHUB_STEP_SUMMARY
-          echo "| Markdown Linting | ${{ needs.markdown-linting.result == 'success' && '✅ Pass' || '❌ Fail' }} |" >> $GITHUB_STEP_SUMMARY
-          echo "| YAML Validation | ${{ needs.yaml-validation.result == 'success' && '✅ Pass' || '❌ Fail' }} |" >> $GITHUB_STEP_SUMMARY
-          echo "| Security Scan | ${{ needs.security-scan.result == 'success' && '✅ Pass' || '❌ Fail' }} |" >> $GITHUB_STEP_SUMMARY
-          echo "| Accessibility Check | ${{ needs.accessibility-check.result == 'success' && '✅ Pass' || '❌ Fail' }} |" >> $GITHUB_STEP_SUMMARY
-          echo "| Performance Check | ${{ needs.performance-check.result == 'success' && '✅ Pass' || '❌ Fail' }} |" >> $GITHUB_STEP_SUMMARY
-          echo "| Link Check | ${{ needs.link-check.result == 'success' && '✅ Pass' || '❌ Fail' }} |" >> $GITHUB_STEP_SUMMARY
-          echo "| Build Test | ${{ needs.build-test.result == 'success' && '✅ Pass' || '❌ Fail' }} |" >> $GITHUB_STEP_SUMMARY
-          echo "| Deployment | ${{ needs.deploy.result == 'success' && '✅ Deployed' || (needs.deploy.result == 'skipped' && '⏭️ Skipped' || '❌ Failed') }} |" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "### 📊 Summary" >> $GITHUB_STEP_SUMMARY
-          echo "- **Total Checks:** 10" >> $GITHUB_STEP_SUMMARY
-          echo "- **Passed:** $(echo '${{ needs.spelling-check.result == 'success' && '1' || '0' }} ${{ needs.css-validation.result == 'success' && '1' || '0' }} ${{ needs.markdown-linting.result == 'success' && '1' || '0' }} ${{ needs.yaml-validation.result == 'success' && '1' || '0' }} ${{ needs.security-scan.result == 'success' && '1' || '0' }} ${{ needs.accessibility-check.result == 'success' && '1' || '0' }} ${{ needs.performance-check.result == 'success' && '1' || '0' }} ${{ needs.link-check.result == 'success' && '1' || '0' }} ${{ needs.build-test.result == 'success' && '1' || '0' }} ${{ needs.deploy.result == 'success' && '1' || '0' }}' | tr ' ' '+' | bc)" >> $GITHUB_STEP_SUMMARY
-          echo "- **Failed:** $(echo '10 - $(( ${{ needs.spelling-check.result == 'success' && '1' || '0' }} + ${{ needs.css-validation.result == 'success' && '1' || '0' }} + ${{ needs.markdown-linting.result == 'success' && '1' || '0' }} + ${{ needs.yaml-validation.result == 'success' && '1' || '0' }} + ${{ needs.security-scan.result == 'success' && '1' || '0' }} + ${{ needs.accessibility-check.result == 'success' && '1' || '0' }} + ${{ needs.performance-check.result == 'success' && '1' || '0' }} + ${{ needs.link-check.result == 'success' && '1' || '0' }} + ${{ needs.build-test.result == 'success' && '1' || '0' }} + ${{ needs.deploy.result == 'success' && '1' || '0' }} ))'" >> $GITHUB_STEP_SUMMARY
-
   deploy:
     name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
