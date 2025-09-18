@@ -197,27 +197,39 @@ As a strong advocate of open source and believer in "Learning by Doing," I have 
 <div class="experience-item">
 <div class="experience-number">1</div>
 <div class="experience-date">2012 — 2016</div>
-<div class="experience-title">B.Tech Computer Science</div>
+<div class="experience-title">Bachelor's in Technology, Computer Science and Engineering</div>
 <div class="experience-company">National Institute of Technology Warangal</div>
 <div class="experience-description">
-Graduated with award-winning startup experience. Winner of Design Challenge by Indian School of Business Hyderabad. Founded startup that built real-time position reporting system for buses without GPS. Worked on AR/VR camera applications, drone data analysis, and ML-based web solutions. Fellow at Teach For India contributing to education and social impact.
+• Grade: 6.44/10<br>
+• Coordinator at Technozion 2015 - South India's second largest technical fest<br>
+• General Secretary at Electronics, Amateur and HAM Club NIT Warangal<br>
+• National Robotics Championship (Robo-war) winner<br>
+• Member of Innovation Garage (IG) 2014-2016<br>
+• Founded startup that built real-time position reporting system for buses without GPS<br>
+• Worked on AR/VR camera applications, drone data analysis, and ML-based web solutions<br>
+• Fellow at Teach For India contributing to education and social impact
 </div>
 <div class="experience-tech">
 <span class="tech-tag">Computer Science</span>
-<span class="tech-tag">Startup</span>
+<span class="tech-tag">Robotics</span>
 <span class="tech-tag">Leadership</span>
-<span class="tech-tag">Computer Vision</span>
-<span class="tech-tag">Machine Learning</span>
+<span class="tech-tag">Innovation</span>
+<span class="tech-tag">Startup</span>
 </div>
 </div>
 
 <div class="experience-item">
 <div class="experience-number">2</div>
 <div class="experience-date">2014 — 2016</div>
-<div class="experience-title">Technology Entrepreneurship Program</div>
+<div class="experience-title">Bachelor's degree, Technology Entrepreneurship Program</div>
 <div class="experience-company">Indian School of Business Hyderabad</div>
 <div class="experience-description">
-Participated in technology entrepreneurship programs focusing on startup development, business model creation, and product management. Winner of Design Challenge by ISB Hyderabad. Founded award-winning startup that built real-time position reporting system for buses without GPS. Pitched idea to Telangana IT minister and received seed funding offer from TSRTC.
+• Grade: 81.2%<br>
+• Won Design Challenge by ISB Hyderabad<br>
+• Participated in technology entrepreneurship programs focusing on startup development, business model creation, and product management<br>
+• Founded award-winning startup that built real-time position reporting system for buses without GPS<br>
+• Pitched idea to Telangana IT minister and received seed funding offer from TSRTC<br>
+• Gained hands-on experience in building scalable technology solutions and understanding market needs
 </div>
 <div class="experience-tech">
 <span class="tech-tag">Entrepreneurship</span>
@@ -230,17 +242,26 @@ Participated in technology entrepreneurship programs focusing on startup develop
 
 <div class="experience-item">
 <div class="experience-number">3</div>
-<div class="experience-date">2010 — 2012</div>
-<div class="experience-title">Higher Secondary Education</div>
-<div class="experience-company">School Education</div>
+<div class="experience-date">2009 — 2011</div>
+<div class="experience-title">Grade 12</div>
+<div class="experience-company">SOS Hermann Gmeiner Higher Secondary School Bharatpur, Nepal</div>
 <div class="experience-description">
-Completed higher secondary education with focus on science and mathematics. Developed strong foundation in analytical thinking and problem-solving skills that later contributed to success in computer science and engineering. Strong performance in Physics, Chemistry, and Mathematics.
+• Head boy of the school<br>
+• Active in Robotics activities and competitions<br>
+• Head Designer of School Magazine<br>
+• Member of Debate team<br>
+• Youth Red Cross member<br>
+• Scout participant<br>
+• Guitar player<br>
+• Eco-club member<br>
+• Developed strong foundation in analytical thinking and problem-solving skills that later contributed to success in computer science and engineering
 </div>
 <div class="experience-tech">
-<span class="tech-tag">Mathematics</span>
-<span class="tech-tag">Physics</span>
-<span class="tech-tag">Chemistry</span>
-<span class="tech-tag">Problem Solving</span>
+<span class="tech-tag">Leadership</span>
+<span class="tech-tag">Robotics</span>
+<span class="tech-tag">Design</span>
+<span class="tech-tag">Debate</span>
+<span class="tech-tag">Community Service</span>
 </div>
 </div>
 
