@@ -62,24 +62,41 @@ Led engineering teams across healthcare and agriculture projects. Built complete
 
 <div class="experience-item">
 <div class="experience-number">3</div>
-<div class="experience-date">2012 — 2016</div>
-<div class="experience-title">B.Tech Computer Science</div>
-<div class="experience-company">NIT Warangal</div>
+<div class="experience-date">2017 — 2019</div>
+<div class="experience-title">Software Engineer & Entrepreneur</div>
+<div class="experience-company">Various Companies & Startups</div>
 <div class="experience-description">
-Graduated with award-winning startup experience. Winner of Design Challenge by Indian School of Business Hyderabad. Founded startup that built real-time position reporting system for buses without GPS. Worked on AR/VR camera applications, drone data analysis, and ML-based web solutions. Fellow at Teach For India contributing to education and social impact.
+Worked across multiple companies and founded startup ventures. Built real-time position reporting system for buses without GPS. Developed AR/VR camera applications, drone data analysis, and ML-based web solutions. Gained experience in full-stack development and product management.
 </div>
 <div class="experience-tech">
-<span class="tech-tag">C++</span>
-<span class="tech-tag">Computer Vision</span>
-<span class="tech-tag">Machine Learning</span>
+<span class="tech-tag">JavaScript</span>
+<span class="tech-tag">React</span>
+<span class="tech-tag">Node.js</span>
 <span class="tech-tag">Startup</span>
-<span class="tech-tag">Leadership</span>
+<span class="tech-tag">Product Management</span>
+</div>
+</div>
+
+<div class="experience-item">
+<div class="experience-number">4</div>
+<div class="experience-date">2016 — 2017</div>
+<div class="experience-title">Software Engineer</div>
+<div class="experience-company">Early Career Roles</div>
+<div class="experience-description">
+Started professional career with focus on web development and software engineering. Worked on various projects including web crawlers, face detection systems, and mobile applications. Gained foundational experience in software development lifecycle and team collaboration.
+</div>
+<div class="experience-tech">
+<span class="tech-tag">Python</span>
+<span class="tech-tag">Web Development</span>
+<span class="tech-tag">Mobile Apps</span>
+<span class="tech-tag">Computer Vision</span>
+<span class="tech-tag">Teamwork</span>
 </div>
 </div>
 
 </div>
 
-<a href="https://www.linkedin.com/in/sunank200/" class="linkedin-link">📋 View complete experience history on LinkedIn →</a>
+<a href="https://www.linkedin.com/in/sunank200/" class="linkedin-link">📋 View detailed experience history on LinkedIn →</a>
 
 ## Skills & Expertise
 
@@ -87,6 +104,62 @@ Graduated with award-winning startup experience. Winner of Design Challenge by I
 **Technologies:** Apache Airflow, Django, FastAPI, Kubernetes, Docker, Redis  
 **Domains:** Data Engineering, Analytics, Machine Learning, Computer Vision, MLOps  
 **Leadership:** Engineering team management, SDLC, Technical hiring, Open source contributions
+
+## Education
+
+<div class="experience-timeline">
+
+<div class="experience-item">
+<div class="experience-number">1</div>
+<div class="experience-date">2012 — 2016</div>
+<div class="experience-title">B.Tech Computer Science</div>
+<div class="experience-company">National Institute of Technology Warangal</div>
+<div class="experience-description">
+Graduated with award-winning startup experience. Winner of Design Challenge by Indian School of Business Hyderabad. Founded startup that built real-time position reporting system for buses without GPS. Worked on AR/VR camera applications, drone data analysis, and ML-based web solutions. Fellow at Teach For India contributing to education and social impact.
+</div>
+<div class="experience-tech">
+<span class="tech-tag">Computer Science</span>
+<span class="tech-tag">Startup</span>
+<span class="tech-tag">Leadership</span>
+<span class="tech-tag">Computer Vision</span>
+<span class="tech-tag">Machine Learning</span>
+</div>
+</div>
+
+<div class="experience-item">
+<div class="experience-number">2</div>
+<div class="experience-date">2014 — 2016</div>
+<div class="experience-title">Technology Entrepreneurship Program</div>
+<div class="experience-company">Indian School of Business Hyderabad</div>
+<div class="experience-description">
+Participated in technology entrepreneurship programs focusing on startup development, business model creation, and product management. Gained hands-on experience in building scalable technology solutions and understanding market needs. Winner of Design Challenge by ISB Hyderabad.
+</div>
+<div class="experience-tech">
+<span class="tech-tag">Entrepreneurship</span>
+<span class="tech-tag">Product Management</span>
+<span class="tech-tag">Business Strategy</span>
+<span class="tech-tag">Startup</span>
+<span class="tech-tag">Innovation</span>
+</div>
+</div>
+
+<div class="experience-item">
+<div class="experience-number">3</div>
+<div class="experience-date">2010 — 2012</div>
+<div class="experience-title">Higher Secondary Education</div>
+<div class="experience-company">School Education</div>
+<div class="experience-description">
+Completed higher secondary education with focus on science and mathematics. Developed strong foundation in analytical thinking and problem-solving skills that later contributed to success in computer science and engineering.
+</div>
+<div class="experience-tech">
+<span class="tech-tag">Mathematics</span>
+<span class="tech-tag">Physics</span>
+<span class="tech-tag">Chemistry</span>
+<span class="tech-tag">Problem Solving</span>
+</div>
+</div>
+
+</div>
 
 ## Certifications
 
@@ -193,4 +266,4 @@ I'm broadly interested in **Software Engineering**, **Data Engineering**, **Comp
 
 ---
 
-*For more details, connect with me on [LinkedIn](https://www.linkedin.com/in/sunank200/) • [View complete professional experience →](https://www.linkedin.com/in/sunank200/)*
+*For more details, connect with me on [LinkedIn](https://www.linkedin.com/in/sunank200/) • [View detailed professional experience →](https://www.linkedin.com/in/sunank200/)*
