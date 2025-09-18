@@ -41,10 +41,21 @@ jobs:
           ruby-version: "2.7"
           bundler-cache: true
 
-      - name: Install Jekyll
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libxml2-dev libxslt1-dev zlib1g-dev
+
+      - name: Configure nokogiri to use system libraries
+        run: |
+          bundle config build.nokogiri --use-system-libraries
+
+      - name: Clear bundler cache and install Jekyll
         run: |
           gem install bundler:2.4.22
-          bundle install
+          bundle config --delete path
+          bundle config --delete deployment
+          bundle install --retry=3
 
       - name: Build Jekyll site
         run: bundle exec jekyll build
@@ -148,10 +159,21 @@ jobs:
           ruby-version: "2.7"
           bundler-cache: true
 
-      - name: Install Jekyll
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libxml2-dev libxslt1-dev zlib1g-dev
+
+      - name: Configure nokogiri to use system libraries
+        run: |
+          bundle config build.nokogiri --use-system-libraries
+
+      - name: Clear bundler cache and install Jekyll
         run: |
           gem install bundler:2.4.22
-          bundle install
+          bundle config --delete path
+          bundle config --delete deployment
+          bundle install --retry=3
 
       - name: Build Jekyll site
         run: bundle exec jekyll build
@@ -184,10 +206,21 @@ jobs:
           ruby-version: "2.7"
           bundler-cache: true
 
-      - name: Install Jekyll
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libxml2-dev libxslt1-dev zlib1g-dev
+
+      - name: Configure nokogiri to use system libraries
+        run: |
+          bundle config build.nokogiri --use-system-libraries
+
+      - name: Clear bundler cache and install Jekyll
         run: |
           gem install bundler:2.4.22
-          bundle install
+          bundle config --delete path
+          bundle config --delete deployment
+          bundle install --retry=3
 
       - name: Build Jekyll site
         run: bundle exec jekyll build
@@ -217,10 +250,21 @@ jobs:
           ruby-version: "2.7"
           bundler-cache: true
 
-      - name: Install Jekyll
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libxml2-dev libxslt1-dev zlib1g-dev
+
+      - name: Configure nokogiri to use system libraries
+        run: |
+          bundle config build.nokogiri --use-system-libraries
+
+      - name: Clear bundler cache and install Jekyll
         run: |
           gem install bundler:2.4.22
-          bundle install
+          bundle config --delete path
+          bundle config --delete deployment
+          bundle install --retry=3
 
       - name: Build Jekyll site
         run: bundle exec jekyll build
@@ -250,10 +294,21 @@ jobs:
           ruby-version: "2.7"
           bundler-cache: true
 
-      - name: Install Jekyll
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libxml2-dev libxslt1-dev zlib1g-dev
+
+      - name: Configure nokogiri to use system libraries
+        run: |
+          bundle config build.nokogiri --use-system-libraries
+
+      - name: Clear bundler cache and install Jekyll
         run: |
           gem install bundler:2.4.22
-          bundle install
+          bundle config --delete path
+          bundle config --delete deployment
+          bundle install --retry=3
 
       - name: Build Jekyll site
         run: bundle exec jekyll build
