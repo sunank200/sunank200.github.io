@@ -22,6 +22,8 @@ As a strong advocate of open source and believer in "Learning by Doing," I have 
 
 ## Experience
 
+<div class="experience-section">
+
 **Current Role - Astronomer (Dec 2022 - Present)**
 - **Senior Software Engineer** working on Apache Airflow core platform and ecosystem
 - **Certified** in Astronomer DAG Authoring and Apache Airflow Fundamentals
@@ -49,6 +51,8 @@ As a strong advocate of open source and believer in "Learning by Doing," I have 
 - **Fellow at Teach For India** - contributing to education and social impact
 - **Volunteer**: Red Cross Youth (Disaster Relief), SOS Children's Villages
 
+</div>
+
 ## Skills & Expertise
 
 **Programming Languages:** Python, C++, SQL, NoSQL  
@@ -65,6 +69,8 @@ As a strong advocate of open source and believer in "Learning by Doing," I have 
 
 ## Notable Projects
 
+<div class="projects-section">
+
 **Current Company Projects:**
 - **Ask-Astro**: LLM-powered chatbot for Apache Airflow community with RAG and Weaviate vector store, integrating Apache Airflow with advanced LLM technology to create a versatile chatbot and knowledge interface, leveraging Retrieval Augmented Generation and Weaviate vector store for enhanced AI-driven query response capabilities in Airflow and Astronomer domains
 - **Universal Transfer Operator**: Unified interface that simplifies how users transfer data from a source to a destination using Apache Airflow. It offers a consistent agnostic interface, improving the users' experience so they do not need to use explicitly specific providers or operators. This operator reduces the need for 100+ transfer operators to a single operator on Airflow
@@ -75,6 +81,8 @@ As a strong advocate of open source and believer in "Learning by Doing," I have 
 - **COVID-19 Mobility Dashboard**: Real-time dashboard integrating with COVID-19 Mobility Data Network and Facebook Data For Good, enabling 11 state government authorities in India with actionable insights to optimize emergency protocols
 - **Annotation Studio**: Data (artifacts and annotation) management and job orchestration platform to manage, schedule and orchestrate annotation jobs across multiple annotation vendors using Apache Airflow, FastAPI and React
 - **Real-time Route Planning**: Multi-modal transport optimization using modified NSGA-II algorithm
+
+</div>
 
 ## Interests
 
