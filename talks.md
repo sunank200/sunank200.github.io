@@ -1,39 +1,44 @@
 ---
 layout: page
-title: Talks
+title: Talks & Presentations
+subtitle: Technical talks and conference presentations
 ---
 
-**Talks**
-- **Data pipeline patterns from ETL to ML to LLM applications** 
+## Recent Talks
 
-***Abstract***
-As the excitement around Large Language Models (LLMs) grows and as initial LLM applications are being deployed, there is a growing desire to understand how to operationalize LLM applications. The data pipelines required for LLM applications can build on the prior experience of data pipelines using Apache Airflow. This talk will focus on the data pipeline patterns applicable and will also leverage a real-life and open-source example, AskAstro, that is currently deployed on Apache Airflow Slack and is built using Apache Airflow.
+### Data Pipeline Patterns from ETL to ML to LLM Applications
+**Event:** Microsoft India Development Center Hyderabad  
+**Date:** December 2023  
+**Co-presenter:** Vikram Koka, SVP of Engineering at Astronomer
 
-***Goal of the talk***:
-Participants who are data practitioners and came in with a knowledge of building ETL data pipelines with Apache Airflow will walk away with an appreciation of how to extend their knowledge to building ML and LLM pipelines to power applications in production. Participants who are not data practitioners will walk away with a high level knowledge of LLM applications and the challenges of deploying AI applications and how to leverage their existing data teams in these new areas.
+**Abstract:** As the excitement around Large Language Models (LLMs) grows and initial LLM applications are being deployed, there's a growing desire to understand how to operationalize LLM applications. The data pipelines required for LLM applications can build on prior experience with data pipelines using Apache Airflow. This talk focuses on applicable data pipeline patterns and leverages AskAstro, a real-life open-source example currently deployed on Apache Airflow Slack.
 
-[Presentation](https://docs.google.com/presentation/d/1ZC7c0ejtkbPkiz1oj2JH4cYBFHKe7H9p0mm0jWTbCco/edit?usp=sharing){: .btn}
+**Learning Outcomes:**
+- Data practitioners will learn how to extend ETL pipeline knowledge to build ML and LLM pipelines for production
+- Non-practitioners will gain high-level knowledge of LLM applications and deployment challenges
+- Understanding of how to leverage existing data teams for AI applications
 
+[📊 Presentation](https://docs.google.com/presentation/d/1ZC7c0ejtkbPkiz1oj2JH4cYBFHKe7H9p0mm0jWTbCco/edit?usp=sharing){: .btn .btn-primary}
 
-- **Love for writing deferrable operators Why and how to defer** 
-Talk at [Airflow Summit 2022](https://airflowsummit.org/). Have you faced a scenario where 100 worker slots are available to run the Tasks, but you have 100 DAGs waiting on a Sensor that’s currently running but idle, waiting for something to happen? Ultimately, you got frustrated as you could not run anything else - even though your entire Airflow cluster was essentially idle. This is exactly where the concept of Deferrable Operators is very useful.
+---
 
-This talk aims to give a brief introduction to solving this problem using Deferrable or Async Operators and how to implement it for your use case.
+### Love for Writing Deferrable Operators: Why and How to Defer
+**Event:** [Airflow Summit 2022](https://airflowsummit.org/)  
+**Date:** August 2022
 
-This talk also aims to explain:
-- Introduction to deferrable operator
-- Introduction to Triggers
-- Using deferrable operator - real-world use case
-- Writing deferrable operators
-- Triggering deferral
-- Writing Triggers
-- An example of a deferrable S3 Operator
-- Advantages over Smart Sensors and reschedule mode for sensor
-- Guide to implement your deferrable operator with the astronomer-providers repository as an example to start with
-- References for useful concepts and libraries: Concurrency, Python asyncio
+**Problem Statement:** Have you faced a scenario where 100 worker slots are available to run tasks, but you have 100 DAGs waiting on a Sensor that's currently running but idle? This leaves your entire Airflow cluster essentially idle while tasks wait.
 
-[Video 1](https://youtu.be/JwjUMNlu7Is){: .btn}
-[Video 2](https://youtu.be/QhSn9oviZ9g){: .btn}
-[Presentation](https://docs.google.com/presentation/d/19b2AW2fzz-M3uAlCU-VrNqbF-Q6mmAgeMo2Woyu0uVk/edit?usp=sharing){: .btn}
+**Solution:** Deferrable Operators provide an elegant solution to this problem using async operators and triggers.
+
+**Topics Covered:**
+- Introduction to deferrable operators and triggers
+- Real-world use cases and implementation strategies
+- Writing custom deferrable operators
+- Deferrable S3 Operator example
+- Advantages over Smart Sensors and reschedule mode
+- Implementation guide using astronomer-providers repository
+- Concurrency concepts and Python asyncio
+
+[🎥 Video 1](https://youtu.be/JwjUMNlu7Is){: .btn .btn-outline} [🎥 Video 2](https://youtu.be/QhSn9oviZ9g){: .btn .btn-outline} [📊 Presentation](https://docs.google.com/presentation/d/19b2AW2fzz-M3uAlCU-VrNqbF-Q6mmAgeMo2Woyu0uVk/edit?usp=sharing){: .btn .btn-primary}
 
 
