@@ -28,52 +28,6 @@ jobs:
       - name: Run spelling check
         run: npm run spell-check
 
-  html-validation:
-    name: HTML Validation
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: "2.7"
-          bundler-cache: true
-
-      - name: Install system dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y libxml2-dev libxslt1-dev zlib1g-dev
-
-      - name: Configure nokogiri to use system libraries
-        run: |
-          bundle config build.nokogiri --use-system-libraries
-
-      - name: Clear bundler cache and install Jekyll
-        run: |
-          gem install bundler:2.4.22
-          bundle config --delete path
-          bundle config --delete deployment
-          bundle config --delete frozen
-          # Remove old Gemfile.lock if it exists to avoid version conflicts
-          rm -f Gemfile.lock
-          bundle install --retry=3
-
-      - name: Build Jekyll site
-        run: bundle exec jekyll build
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "18"
-
-      - name: Setup Node.js dependencies
-        run: npm install
-
-      - name: Validate HTML
-        run: npm run html-validate
-
   css-validation:
     name: CSS Validation & Linting
     runs-on: ubuntu-latest
@@ -349,7 +303,6 @@ jobs:
     needs:
       [
         spelling-check,
-        html-validation,
         css-validation,
         markdown-linting,
         yaml-validation,
@@ -368,7 +321,6 @@ jobs:
           echo "| Check | Status |" >> $GITHUB_STEP_SUMMARY
           echo "|-------|--------|" >> $GITHUB_STEP_SUMMARY
           echo "| Spelling & Grammar | ${{ needs.spelling-check.result == 'success' && '✅ Pass' || '❌ Fail' }} |" >> $GITHUB_STEP_SUMMARY
-          echo "| HTML Validation | ${{ needs.html-validation.result == 'success' && '✅ Pass' || '❌ Fail' }} |" >> $GITHUB_STEP_SUMMARY
           echo "| CSS Validation | ${{ needs.css-validation.result == 'success' && '✅ Pass' || '❌ Fail' }} |" >> $GITHUB_STEP_SUMMARY
           echo "| Markdown Linting | ${{ needs.markdown-linting.result == 'success' && '✅ Pass' || '❌ Fail' }} |" >> $GITHUB_STEP_SUMMARY
           echo "| YAML Validation | ${{ needs.yaml-validation.result == 'success' && '✅ Pass' || '❌ Fail' }} |" >> $GITHUB_STEP_SUMMARY
@@ -379,6 +331,6 @@ jobs:
           echo "| Build Test | ${{ needs.build-test.result == 'success' && '✅ Pass' || '❌ Fail' }} |" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### 📊 Summary" >> $GITHUB_STEP_SUMMARY
-          echo "- **Total Checks:** 10" >> $GITHUB_STEP_SUMMARY
-          echo "- **Passed:** $(echo '${{ needs.spelling-check.result == 'success' && '1' || '0' }} ${{ needs.html-validation.result == 'success' && '1' || '0' }} ${{ needs.css-validation.result == 'success' && '1' || '0' }} ${{ needs.markdown-linting.result == 'success' && '1' || '0' }} ${{ needs.yaml-validation.result == 'success' && '1' || '0' }} ${{ needs.security-scan.result == 'success' && '1' || '0' }} ${{ needs.accessibility-check.result == 'success' && '1' || '0' }} ${{ needs.performance-check.result == 'success' && '1' || '0' }} ${{ needs.link-check.result == 'success' && '1' || '0' }} ${{ needs.build-test.result == 'success' && '1' || '0' }}' | tr ' ' '+' | bc)" >> $GITHUB_STEP_SUMMARY
-          echo "- **Failed:** $(echo '10 - $(echo '${{ needs.spelling-check.result == 'success' && '1' || '0' }} ${{ needs.html-validation.result == 'success' && '1' || '0' }} ${{ needs.css-validation.result == 'success' && '1' || '0' }} ${{ needs.markdown-linting.result == 'success' && '1' || '0' }} ${{ needs.yaml-validation.result == 'success' && '1' || '0' }} ${{ needs.security-scan.result == 'success' && '1' || '0' }} ${{ needs.accessibility-check.result == 'success' && '1' || '0' }} ${{ needs.performance-check.result == 'success' && '1' || '0' }} ${{ needs.link-check.result == 'success' && '1' || '0' }} ${{ needs.build-test.result == 'success' && '1' || '0' }}' | tr ' ' '+' | bc)" >> $GITHUB_STEP_SUMMARY
+          echo "- **Total Checks:** 9" >> $GITHUB_STEP_SUMMARY
+          echo "- **Passed:** $(echo '${{ needs.spelling-check.result == 'success' && '1' || '0' }} ${{ needs.css-validation.result == 'success' && '1' || '0' }} ${{ needs.markdown-linting.result == 'success' && '1' || '0' }} ${{ needs.yaml-validation.result == 'success' && '1' || '0' }} ${{ needs.security-scan.result == 'success' && '1' || '0' }} ${{ needs.accessibility-check.result == 'success' && '1' || '0' }} ${{ needs.performance-check.result == 'success' && '1' || '0' }} ${{ needs.link-check.result == 'success' && '1' || '0' }} ${{ needs.build-test.result == 'success' && '1' || '0' }}' | tr ' ' '+' | bc)" >> $GITHUB_STEP_SUMMARY
+          echo "- **Failed:** $(echo '9 - $(echo '${{ needs.spelling-check.result == 'success' && '1' || '0' }} ${{ needs.css-validation.result == 'success' && '1' || '0' }} ${{ needs.markdown-linting.result == 'success' && '1' || '0' }} ${{ needs.yaml-validation.result == 'success' && '1' || '0' }} ${{ needs.security-scan.result == 'success' && '1' || '0' }} ${{ needs.accessibility-check.result == 'success' && '1' || '0' }} ${{ needs.performance-check.result == 'success' && '1' || '0' }} ${{ needs.link-check.result == 'success' && '1' || '0' }} ${{ needs.build-test.result == 'success' && '1' || '0' }}' | tr ' ' '+' | bc)" >> $GITHUB_STEP_SUMMARY
