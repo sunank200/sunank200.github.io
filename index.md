@@ -79,6 +79,8 @@ Graduated with award-winning startup experience. Winner of Design Challenge by I
 
 </div>
 
+<a href="https://www.linkedin.com/in/sunank200/" class="linkedin-link">📋 View complete experience history on LinkedIn →</a>
+
 ## Skills & Expertise
 
 **Programming Languages:** Python, C++, SQL, NoSQL  
@@ -191,4 +193,4 @@ I'm broadly interested in **Software Engineering**, **Data Engineering**, **Comp
 
 ---
 
-*For more details, connect with me on [LinkedIn](https://www.linkedin.com/in/sunank200/)*
+*For more details, connect with me on [LinkedIn](https://www.linkedin.com/in/sunank200/) • [View complete professional experience →](https://www.linkedin.com/in/sunank200/)*

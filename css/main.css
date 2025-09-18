@@ -1007,6 +1007,27 @@ a:focus, button:focus {
   outline: 2px solid #3498db;
   outline-offset: 2px;
 }
+
+/* LinkedIn Link Styling */
+.linkedin-link {
+  display: inline-block;
+  background: #0077b5;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin: 10px 0;
+}
+
+.linkedin-link:hover {
+  background: #005885;
+  color: white;
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 119, 181, 0.3);
+}
 table tr th :first-child,
 table tr td :first-child {
   margin-top: 0;
