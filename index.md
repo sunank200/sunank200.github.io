@@ -46,7 +46,14 @@ As a strong advocate of open source and believer in "Learning by Doing," I have 
 <div class="experience-title">Senior Software Engineer</div>
 <div class="experience-company">Astronomer</div>
 <div class="experience-description">
-Working on Apache Airflow 3.0 release and core platform development. Led development of Ask-Astro, an open-source reference implementation of Andreessen Horowitz's LLM Application Architecture. Working on Universal Transfer Operator that simplifies data transfer workflows. Design and contribute to Astro Python SDK for rapid development of ETL workflows. Implemented Apache Airflow Providers with Deferrable Operators & Sensors. Presented at Airflow Summit 2022 on deferrable operators.
+• Working on Apache Airflow 3.0 release and core platform development<br>
+• Led development of Ask-Astro, an open-source reference implementation of Andreessen Horowitz's LLM Application Architecture<br>
+• Working on Universal Transfer Operator that simplifies data transfer workflows and reduces 100+ operators to a single interface<br>
+• Design and contribute to Astro Python SDK for rapid development of ETL workflows in Apache Airflow<br>
+• Implemented Apache Airflow Providers with Deferrable Operators & Sensors for improved performance<br>
+• Presented "Love for writing deferrable operators: Why and how to defer?" at Airflow Summit 2022<br>
+• Active contributor to open-source Apache Airflow with strong community presence<br>
+• Work on data retrieval and embedding, prompt orchestration, and feedback loops for LLM applications
 </div>
 <div class="experience-tech">
 <span class="tech-tag">Python</span>
@@ -60,11 +67,20 @@ Working on Apache Airflow 3.0 release and core platform development. Led develop
 
 <div class="experience-item">
 <div class="experience-number">2</div>
-<div class="experience-date">Jan 2021 — Jan 2022</div>
-<div class="experience-title">Senior Software Engineer</div>
+<div class="experience-date">Feb 2019 — Jan 2022</div>
+<div class="experience-title">Senior Software Engineer / Software Product Engineer</div>
 <div class="experience-company">Wadhwani AI</div>
 <div class="experience-description">
-Hired and led engineering teams across multiple projects in healthcare and agriculture domains. Led engineering effort for annotation studio - data management and job orchestration platform using Apache Airflow, FastAPI and React. Engineered microservices including authentication, geospatial directory and emailing service using Django, AWS SES, OAuth 2.0, and AWS Cognito. Reduced video buffering time by 75% on open-source CVAT annotation tool by implementing Redis cache.
+• Hired and led engineering teams across multiple projects in healthcare and agriculture domains<br>
+• Led engineering effort for annotation studio - data management and job orchestration platform using Apache Airflow, FastAPI and React<br>
+• Engineered microservices including authentication, geospatial directory and emailing service using Django, AWS SES, OAuth 2.0, and AWS Cognito<br>
+• Reduced video buffering time by 75% on open-source CVAT annotation tool by implementing Redis cache<br>
+• Designed, developed and deployed pest management system using PyTorch-based model on phone/cloud to identify harmful pests and alert farmers about infestation<br>
+• Part of team that won $2M grant from Google AI Impact Challenge, becoming the only team from India to do so<br>
+• Developed complete pipeline for data collection (ODK), annotation (LabelMe), model deployment, analytics dashboard with Django backend<br>
+• Built COVID-19 mobility dashboard for 11 state government authorities in India with actionable insights to optimize emergency protocols<br>
+• Demoed AI solutions to Sundar Pichai at Google AI Impact Challenge Summit<br>
+• Systems currently used by 11,000+ farmers for pest management
 </div>
 <div class="experience-tech">
 <span class="tech-tag">Python</span>
@@ -72,35 +88,23 @@ Hired and led engineering teams across multiple projects in healthcare and agric
 <span class="tech-tag">FastAPI</span>
 <span class="tech-tag">React</span>
 <span class="tech-tag">Apache Airflow</span>
+<span class="tech-tag">PyTorch</span>
 <span class="tech-tag">AWS</span>
+<span class="tech-tag">GCP</span>
 </div>
 </div>
 
 <div class="experience-item">
 <div class="experience-number">3</div>
-<div class="experience-date">Feb 2019 — Jan 2021</div>
-<div class="experience-title">Software Product Engineer</div>
-<div class="experience-company">Wadhwani AI</div>
-<div class="experience-description">
-Designed, developed and deployed pest management system using PyTorch-based model on phone/cloud to identify harmful pests and alert farmers about infestation. Part of team that won $2M grant from Google AI Impact Challenge. Developed complete pipeline for data collection (ODK), annotation (LabelMe), model deployment, analytics dashboard with Django backend. Built COVID-19 mobility dashboard for 11 state government authorities in India.
-</div>
-<div class="experience-tech">
-<span class="tech-tag">PyTorch</span>
-<span class="tech-tag">Django</span>
-<span class="tech-tag">Computer Vision</span>
-<span class="tech-tag">GCP</span>
-<span class="tech-tag">Data Engineering</span>
-<span class="tech-tag">MLOps</span>
-</div>
-</div>
-
-<div class="experience-item">
-<div class="experience-number">4</div>
 <div class="experience-date">Dec 2017 — Jan 2019</div>
 <div class="experience-title">Software Development Engineer</div>
 <div class="experience-company">DreamVu Inc.</div>
 <div class="experience-description">
-Developed end-to-end modular video acquisition and processing software for VR/AR and machine vision applications for in-house camera along with SDK for third party integration. Built camera calibration software for intrinsic and extrinsic camera calibration. Helped secure angel funding from SRI capital through technical contributions to 360-degree, 3D video capture platform.
+• Developed end-to-end modular video acquisition and processing software for VR/AR and machine vision applications for in-house camera<br>
+• Built SDK for third party integration to enable external developers to use the camera platform<br>
+• Built camera calibration software for intrinsic and extrinsic camera calibration<br>
+• Helped secure angel funding from SRI capital through technical contributions to 360-degree, 3D video capture platform<br>
+• Worked on real-time 3D video processing and streaming capabilities
 </div>
 <div class="experience-tech">
 <span class="tech-tag">Computer Vision</span>
@@ -112,12 +116,17 @@ Developed end-to-end modular video acquisition and processing software for VR/AR
 </div>
 
 <div class="experience-item">
-<div class="experience-number">5</div>
+<div class="experience-number">4</div>
 <div class="experience-date">Aug 2016 — Nov 2017</div>
 <div class="experience-title">Senior Software Developer</div>
 <div class="experience-company">aapkapainter.com</div>
 <div class="experience-description">
-Joined as founding team member and developed Customer Relationship Management (CRM) and task management system along with sales and marketing automation platform using CodeIgniter. Built customer and vendor transaction module integrating with Razorpay payment gateway handling INR 10+ million monthly transactions. Built Flask-RESTful API to extract room wall measurements from floor plan images using Google Cloud Vision, Ocropus and Tesseract.
+• Joined as founding team member and developed Customer Relationship Management (CRM) and task management system<br>
+• Built sales and marketing automation platform using CodeIgniter framework<br>
+• Built customer and vendor transaction module integrating with Razorpay payment gateway handling INR 10+ million monthly transactions<br>
+• Built Flask-RESTful API to extract room wall measurements from floor plan images using Google Cloud Vision, Ocropus and Tesseract<br>
+• Created real-time wall paint and texture visualizer by training Haar Classifier to detect walls<br>
+• Worked extensively on Search Engine Optimization (SEO) and Search Engine Marketing (SEM)
 </div>
 <div class="experience-tech">
 <span class="tech-tag">CodeIgniter</span>
@@ -129,12 +138,16 @@ Joined as founding team member and developed Customer Relationship Management (C
 </div>
 
 <div class="experience-item">
-<div class="experience-number">6</div>
+<div class="experience-number">5</div>
 <div class="experience-date">Apr 2015 — Mar 2016</div>
 <div class="experience-title">Project Lead</div>
 <div class="experience-company">TrackThisBus (Startup)</div>
 <div class="experience-description">
-Founded startup as part of Design Challenge hosted by Indian School of Business Hyderabad. Created fully working position-reporting system for local buses displaying real-time position without using GPS. Winner of Design Challenge by ISB Hyderabad. Pitched idea to Telangana IT minister and received seed funding offer from TSRTC (Telangana State Road Transport Corporation).
+• Founded startup as part of Design Challenge hosted by Indian School of Business Hyderabad<br>
+• Created fully working position-reporting system for local buses displaying real-time position without using GPS<br>
+• Winner of Design Challenge by ISB Hyderabad, beating multiple competing teams<br>
+• Pitched idea to Telangana IT minister and received seed funding offer from TSRTC (Telangana State Road Transport Corporation)<br>
+• Developed innovative GPS-free tracking solution for public transportation systems
 </div>
 <div class="experience-tech">
 <span class="tech-tag">Startup</span>
@@ -146,12 +159,16 @@ Founded startup as part of Design Challenge hosted by Indian School of Business 
 </div>
 
 <div class="experience-item">
-<div class="experience-number">7</div>
+<div class="experience-number">6</div>
 <div class="experience-date">Jan 2015 — Jan 2016</div>
 <div class="experience-title">Quality Control and Management Coordinator</div>
 <div class="experience-company">Technozion, NIT Warangal</div>
 <div class="experience-description">
-Got ISO 9001:2008 certification and UNESCO patronage for Technozion 15, South India's second largest technical fest. The fest saw revenue of over 1.5 Crore INR (200k USD) from sponsorships and events. Was responsible for leading, coordination, quality control, risk management, blogging and management for various 150+ events during Technozion 15.
+• Got ISO 9001:2008 certification and UNESCO patronage for Technozion 15, South India's second largest technical fest<br>
+• The fest saw revenue of over 1.5 Crore INR (200k USD) from sponsorships and events<br>
+• Was responsible for leading, coordination, quality control, risk management, blogging and management for various 150+ events during Technozion 15<br>
+• Managed large-scale event operations with multiple stakeholders and vendors<br>
+• Ensured quality standards and compliance across all festival activities
 </div>
 <div class="experience-tech">
 <span class="tech-tag">Event Management</span>
