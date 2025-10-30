@@ -28,9 +28,12 @@ As a strong advocate of open source and believer in "Learning by Doing," I have 
 <li><a href="#experience">💼 Experience</a></li>
 <li><a href="#education">🎓 Education</a></li>
 <li><a href="#skills--expertise">🛠️ Skills & Expertise</a></li>
+<li><a href="#open-source">📦 Open Source Contributions</a></li>
 <li><a href="#certifications">🏆 Certifications</a></li>
+<li><a href="#talks-and-publications">🎤 Talks & Publications</a></li>
 <li><a href="#notable-projects">🚀 Notable Projects</a></li>
 <li><a href="#interests">🎯 Interests</a></li>
+<li><a href="#achievements">🏅 Achievements & Extracurricular</a></li>
 <li><a href="#resume">📄 Resume</a></li>
 <li><a href="#recent-updates">📰 Recent Updates</a></li>
 <li><a href="#contact">📞 Contact</a></li>
@@ -47,14 +50,21 @@ As a strong advocate of open source and believer in "Learning by Doing," I have 
 <div class="experience-title">Senior Software Engineer</div>
 <div class="experience-company">Astronomer</div>
 <div class="experience-description">
-• Working on Apache Airflow 3.0 release and core platform development<br>
-• Led development of Ask-Astro, an open-source reference implementation of Andreessen Horowitz's LLM Application Architecture<br>
-• Working on Universal Transfer Operator that simplifies data transfer workflows and reduces 100+ operators to a single interface<br>
-• Design and contribute to Astro Python SDK for rapid development of ETL workflows in Apache Airflow<br>
-• Implemented Apache Airflow Providers with Deferrable Operators & Sensors for improved performance<br>
-• Presented "Love for writing deferrable operators: Why and how to defer?" at Airflow Summit 2022<br>
-• Active contributor to open-source Apache Airflow with strong community presence<br>
-• Work on data retrieval and embedding, prompt orchestration, and feedback loops for LLM applications
+• Spearheaded key features in <a href="https://airflow.apache.org/blog/airflow-three-point-oh-is-here/" target="_blank">Apache Airflow 3.0 release</a>, pivotal to Astronomer's <a href="https://www.astronomer.io/press-releases/astronomer-secures-93-million-series-d-funding/" target="_blank">$93M Series D momentum</a><br>
+• <a href="https://airflow.apache.org/blog/airflow-three-point-oh-is-here/#inference-execution-and-hyperparameter-tuning" target="_blank">AIP-83</a>: Independently designed and developed the proposal enabling Airflow to directly support model training and generative AI inference without hacks or workarounds<br>
+• Architected and built <a href="https://docs.astral.sh/ruff/rules/" target="_blank">ruff linter</a> and <a href="https://airflow.apache.org/docs/apache-airflow/stable/installation/upgrading_to_airflow3.html#step-6-deployment-managers-upgrade-your-airflow-instance" target="_blank">configuration tools</a> enabling Airflow users worldwide to seamlessly upgrade from 2.x to 3<br>
+• Contributed to <a href="https://airflow.apache.org/blog/airflow-three-point-oh-is-here/#run-anywhere-in-any-language" target="_blank">AIP-72</a>, migrating Airflow to a client–server architecture for multi-cloud deployments and multi-language support<br>
+• Led development of <a href="https://www.astronomer.io/docs/runtime/overview" target="_blank">Astro Runtime</a> (Astronomer's production-ready Airflow distribution that bundles Airflow, core providers, and dependencies into standardized, secure Docker images)<br>
+• Designed and engineered the `astronomer-providers-logging` module to handle task logs in Airflow via HTTP endpoints, reducing the Astro Runtime Docker image size by 80% by removing heavy providers<br>
+• Managed 80% of <a href="https://www.astronomer.io/docs/runtime/runtime-release-notes" target="_blank">Astro Runtime releases</a> with complex dependencies on Apache Airflow, providing Day Zero support for Astronomer customers<br>
+• Pioneered nightly build releases to catch bugs early in Airflow/Astro, reducing manual regression testing by 90%<br>
+• Designed and built <a href="https://ask.astronomer.io/" target="_blank">Ask-Astro</a> — an open-source chatbot for Apache Airflow/Astronomer Q&A, using Airflow to orchestrate data ingestion, embed content into a vector database, and incorporate a feedback loop (<a href="https://github.com/astronomer/ask-astro" target="_blank">source code</a>)<br>
+• Architected and implemented <a href="https://apache-airflow-provider-transfers.readthedocs.io/en/latest/" target="_blank">apache-airflow-providers-transfers</a> for Airflow, providing a single agnostic interface to move data between sources and destinations, replacing the need for 100+ specialised transfer operators<br>
+• Co-designed and developed the <a href="https://astro-sdk-python.readthedocs.io/en/stable/" target="_blank">Astro Python SDK</a> for rapid ETL development in Airflow, abstracting away DAG boilerplate so engineers can focus on business logic<br>
+• Implemented deferrable mode for 80+ Airflow operators/sensors, freeing worker slots while waiting on external events and reducing compute costs by up to 70%<br>
+• Delivered presentations at Apache Airflow Summit (2022—2025) and keynote at Microsoft IDC Hyderabad on advanced Airflow topics<br>
+• Contributed extensively to Apache Airflow (core and providers) with new features, bug fixes, and documentation improvements<br>
+• Established guidelines and guardrails for using generative AI coding tools (Cursor, GitHub Copilot) to boost developer productivity
 </div>
 <div class="experience-tech">
 <span class="tech-tag">Python</span>
@@ -63,25 +73,26 @@ As a strong advocate of open source and believer in "Learning by Doing," I have 
 <span class="tech-tag">LangChain</span>
 <span class="tech-tag">AWS</span>
 <span class="tech-tag">GCP</span>
+<span class="tech-tag">Docker</span>
+<span class="tech-tag">Ruff</span>
 </div>
 </div>
 
 <div class="experience-item">
 <div class="experience-number">2</div>
-<div class="experience-date">Feb 2019 — Jan 2022</div>
-<div class="experience-title">Senior Software Engineer / Software Product Engineer</div>
+<div class="experience-date">Jan 2019 — Dec 2021</div>
+<div class="experience-title">Senior Software Engineer</div>
 <div class="experience-company">Wadhwani AI</div>
 <div class="experience-description">
 • Hired and led engineering teams across multiple projects in healthcare and agriculture domains<br>
-• Led engineering effort for annotation studio - data management and job orchestration platform using Apache Airflow, FastAPI and React<br>
-• Engineered microservices including authentication, geospatial directory and emailing service using Django, AWS SES, OAuth 2.0, and AWS Cognito<br>
-• Reduced video buffering time by 75% on open-source CVAT annotation tool by implementing Redis cache<br>
-• Designed, developed and deployed pest management system using PyTorch-based model on phone/cloud to identify harmful pests and alert farmers about infestation<br>
-• Part of team that won $2M grant from Google AI Impact Challenge, becoming the only team from India to do so<br>
-• Developed complete pipeline for data collection (ODK), annotation (LabelMe), model deployment, analytics dashboard with Django backend<br>
-• Built COVID-19 mobility dashboard for 11 state government authorities in India with actionable insights to optimize emergency protocols<br>
-• Demoed AI solutions to Sundar Pichai at Google AI Impact Challenge Summit<br>
-• Systems currently used by 11,000+ farmers for pest management
+• <strong>Integrated pest management solution:</strong><br>
+  • Designed, developed and deployed a pest management system which runs a PyTorch-based model on the phone/cloud to identify harmful pests, alert farmers about infestation and reduce crop loss in cotton farming. Currently being used by over 11,000 farmers<br>
+  • Developed data pipeline for data collection using <a href="https://opendatakit.org/" target="_blank">ODK</a>, annotation using <a href="http://labelme.csail.mit.edu/Release3.0/" target="_blank">LabelMe</a>, model deployment (online on-cloud and offline on-device), analytics dashboard along with open APIs for third-party integration and Django backend<br>
+  • Part of the team that won a $2 million grant as part of the <a href="https://impactchallenge.withgoogle.com/ai2018/grantees" target="_blank">Google AI Impact Challenge</a> offered to only 20 teams worldwide, becoming the only team from India to do so and featuring in Google I/O and Google for India<br>
+• Led engineering effort for annotation studio which is data (artifacts and annotation) management and job orchestration platform to manage, schedule and orchestrate annotation jobs across multiple annotation vendors using Apache Airflow, FastAPI and React. The annotations are used for model training and performance decisions<br>
+• Reduced the video buffering time by 75% on open-source <a href="https://github.com/openvinotoolkit/cvat" target="_blank">CVAT</a> annotation tool by adding Redis cache to cache the frames during data ingestion<br>
+• Engineered various microservices being used by multiple teams with over 0.5M events to date like authentication and authorization service, geospatial directory and emailing-service using Django, AWS SES, OAuth 2.0, AWS Cognito and Fargate<br>
+• Built a COVID-19 mobility dashboard integrating with <a href="https://www.covid19mobility.org/" target="_blank">COVID-19 Mobility Data Network</a> and <a href="https://dataforgood.fb.com/docs/covid19/" target="_blank">Facebook Data For Good</a> which enabled 11 state government authorities in India with actionable insights to optimize emergency protocols in line with epidemic spread and identifying high movement areas
 </div>
 <div class="experience-tech">
 <span class="tech-tag">Python</span>
@@ -91,7 +102,8 @@ As a strong advocate of open source and believer in "Learning by Doing," I have 
 <span class="tech-tag">Apache Airflow</span>
 <span class="tech-tag">PyTorch</span>
 <span class="tech-tag">AWS</span>
-<span class="tech-tag">GCP</span>
+<span class="tech-tag">Redis</span>
+<span class="tech-tag">OAuth 2.0</span>
 </div>
 </div>
 
@@ -101,11 +113,7 @@ As a strong advocate of open source and believer in "Learning by Doing," I have 
 <div class="experience-title">Software Development Engineer</div>
 <div class="experience-company">DreamVu Inc.</div>
 <div class="experience-description">
-• Developed end-to-end modular video acquisition and processing software for VR/AR and machine vision applications for in-house camera<br>
-• Built SDK for third party integration to enable external developers to use the camera platform<br>
-• Built camera calibration software for intrinsic and extrinsic camera calibration<br>
-• Helped secure angel funding from SRI capital through technical contributions to 360-degree, 3D video capture platform<br>
-• Worked on real-time 3D video processing and streaming capabilities
+• Developed end-to-end modular video acquisition and processing software for VR/AR and machine vision applications (for in-house camera) along with SDK for third party integration which helped to secure an angel funding of $0.5 million from SRI capital
 </div>
 <div class="experience-tech">
 <span class="tech-tag">Computer Vision</span>
@@ -119,15 +127,10 @@ As a strong advocate of open source and believer in "Learning by Doing," I have 
 <div class="experience-item">
 <div class="experience-number">4</div>
 <div class="experience-date">Aug 2016 — Nov 2017</div>
-<div class="experience-title">Senior Software Developer</div>
-<div class="experience-company">aapkapainter.com</div>
+<div class="experience-title">Software Engineer</div>
+<div class="experience-company">AapkaPainter</div>
 <div class="experience-description">
-• Joined as founding team member and developed Customer Relationship Management (CRM) and task management system<br>
-• Built sales and marketing automation platform using CodeIgniter framework<br>
-• Built customer and vendor transaction module integrating with Razorpay payment gateway handling INR 10+ million monthly transactions<br>
-• Built Flask-RESTful API to extract room wall measurements from floor plan images using Google Cloud Vision, Ocropus and Tesseract<br>
-• Created real-time wall paint and texture visualizer by training Haar Classifier to detect walls<br>
-• Worked extensively on Search Engine Optimization (SEO) and Search Engine Marketing (SEM)
+• Built CRM, task management, and sales automation systems; integrated Razorpay payment gateway processing 10M+ INR monthly; developed Flask API for automated floor plan measurement extraction using computer vision
 </div>
 <div class="experience-tech">
 <span class="tech-tag">CodeIgniter</span>
@@ -140,43 +143,17 @@ As a strong advocate of open source and believer in "Learning by Doing," I have 
 
 <div class="experience-item">
 <div class="experience-number">5</div>
-<div class="experience-date">Apr 2015 — Mar 2016</div>
-<div class="experience-title">Project Lead</div>
-<div class="experience-company">TrackThisBus (Startup)</div>
+<div class="experience-date">Mar 2015 — Jun 2015</div>
+<div class="experience-title">Software Intern</div>
+<div class="experience-company">Almabase</div>
 <div class="experience-description">
-• Founded startup as part of Design Challenge hosted by Indian School of Business Hyderabad<br>
-• Created fully working position-reporting system for local buses displaying real-time position without using GPS<br>
-• Winner of Design Challenge by ISB Hyderabad, beating multiple competing teams<br>
-• Pitched idea to Telangana IT minister and received seed funding offer from TSRTC (Telangana State Road Transport Corporation)<br>
-• Developed innovative GPS-free tracking solution for public transportation systems
+• Built scheduled ride booking web app with notifications; developed web crawler for alumni news extraction using BeautifulSoup and regex; implemented OpenCV-based face detection system to extract alumni photos from archived documents
 </div>
 <div class="experience-tech">
-<span class="tech-tag">Startup</span>
-<span class="tech-tag">Real-time Systems</span>
-<span class="tech-tag">GPS Alternative</span>
-<span class="tech-tag">Public Transport</span>
-<span class="tech-tag">Leadership</span>
-</div>
-</div>
-
-<div class="experience-item">
-<div class="experience-number">6</div>
-<div class="experience-date">Jan 2015 — Jan 2016</div>
-<div class="experience-title">Quality Control and Management Coordinator</div>
-<div class="experience-company">Technozion, NIT Warangal</div>
-<div class="experience-description">
-• Got ISO 9001:2008 certification and UNESCO patronage for Technozion 15, South India's second largest technical fest<br>
-• The fest saw revenue of over 1.5 Crore INR (200k USD) from sponsorships and events<br>
-• Was responsible for leading, coordination, quality control, risk management, blogging and management for various 150+ events during Technozion 15<br>
-• Managed large-scale event operations with multiple stakeholders and vendors<br>
-• Ensured quality standards and compliance across all festival activities
-</div>
-<div class="experience-tech">
-<span class="tech-tag">Event Management</span>
-<span class="tech-tag">Quality Control</span>
-<span class="tech-tag">Leadership</span>
-<span class="tech-tag">ISO Certification</span>
-<span class="tech-tag">Project Management</span>
+<span class="tech-tag">Web Development</span>
+<span class="tech-tag">BeautifulSoup</span>
+<span class="tech-tag">OpenCV</span>
+<span class="tech-tag">Web Scraping</span>
 </div>
 </div>
 
@@ -186,10 +163,28 @@ As a strong advocate of open source and believer in "Learning by Doing," I have 
 
 ## Skills & Expertise {#skills--expertise}
 
-**Programming Languages:** Python, C++, SQL, NoSQL  
-**Technologies:** Apache Airflow, Django, FastAPI, Kubernetes, Docker, Redis  
-**Domains:** Data Engineering, Analytics, Machine Learning, Computer Vision, MLOps  
-**Leadership:** Engineering team management, SDLC, Technical hiring, Open source contributions
+**Core Concepts:** Data Structures and Algorithms, Object-Oriented Programming, System Design, Data Engineering, LLMOps, Large Language Models (LLM), Conversational AI, Geo-spatial Data, REST APIs, CI/CD, Release Management
+
+**Programming Languages:** Python (Proficient), C++ (Intermediate), JavaScript (Intermediate), PHP (Intermediate), C (Prior Experience), Java (Prior Experience), Bash, LaTeX
+
+**Frameworks and Libraries:** Apache Airflow, Django, FastAPI, Flask, LangChain, OpenCV, OpenLineage, Apache Livy
+
+**Databases:** PostgreSQL, MySQL, MongoDB, Weaviate, SQL
+
+**Cloud and Infrastructure:** AWS, Google Compute Engine, Azure, Docker, OAuth 2.0
+
+**DevOps and Tools:** Git, GitHub Actions, CircleCI, Swagger, Postman
+
+**Leadership:** Team Management, Technical Hiring, Mentoring, Stakeholder Management, Technical Strategy, Architecture Reviews, Process Improvement, Vendor Management, Cross-functional Collaboration, SDLC, Agile, Sprint Planning
+
+## Open Source Contributions {#open-source}
+
+- [**apache-airflow**](https://github.com/apache/airflow) - Core Apache Airflow platform contributions
+- [**ask-astro**](https://github.com/astronomer/ask-astro) - Open-source chatbot for Apache Airflow/Astronomer Q&A
+- [**ruff**](https://github.com/astral-sh/ruff) - Python linter contributions
+- [**apache-airflow-provider-transfers**](https://github.com/astronomer/apache-airflow-provider-transfers) - Universal Transfer Operator
+- [**astro-sdk**](https://github.com/astronomer/astro-sdk) - Python SDK for rapid ETL development in Airflow
+- [**astronomer-providers**](https://github.com/astronomer/astronomer-providers) - Apache Airflow providers with deferrable operators
 
 ## Education {#education}
 
@@ -275,6 +270,19 @@ As a strong advocate of open source and believer in "Learning by Doing," I have 
 - **Apache Airflow** - Udemy Certification (Jan 2021)
 - **SQL** - HackerRank Certification (Sep 2020)
 
+## Talks & Publications {#talks-and-publications}
+
+I've delivered technical talks at major conferences including Apache Airflow Summit (2022-2025), Microsoft IDC Hyderabad, and published research at KDD 2020.
+
+**Recent Highlights:**
+- **2025:** Two talks at Apache Airflow Summit Seattle (Beyond Execution Dates, Seamless Airflow Upgrades)
+- **2024:** Advanced Dataset Scheduling talk at Airflow Summit San Francisco
+- **2023:** Data pipeline patterns from ETL to ML to LLM at Microsoft IDC Hyderabad
+- **2022:** Deferrable Operators talk at Airflow Summit 2022
+- **2020:** Published research paper on AI-powered pest management at KDD 2020
+
+**[📚 View all talks, presentations, and publications →](/talks/)** {#talks-link}
+
 ## Notable Projects {#notable-projects}
 
 <div class="project-card">
@@ -334,6 +342,17 @@ Real-time dashboard integrating with COVID-19 Mobility Data Network and Facebook
 ## Interests {#interests}
 
 I'm broadly interested in **Software Engineering**, **Data Engineering**, **Computer Vision**, and **Computer Systems**. I'm also a robotics enthusiast and was a Fellow at Teach for India. Always an aspiring polymath!
+
+## Achievements & Extracurricular {#achievements}
+
+**Winner Design Challenge, ISB Hyderabad** (2015)  
+Founded an award-winning startup which built a real-time position reporting system for buses without using GPS. Pitched our idea to Telangana IT minister and received a seed funding offer from TSRTC (Telangana State Road Transport Corporation). [[Presentation]](https://docs.google.com/presentation/d/1m_39QzHgLXtPjgojvQlsqw3c-CUAv9IkXCWSWAgUVGk/edit?usp=sharing)
+
+**Coordinator, Quality Control And Management - Technozion 15** (Aug 2015 – Jan 2016)  
+Got ISO 9001:2008 certification and UNESCO patronage for Technozion 15, South India's second largest technical fest. The fest saw a revenue of over 1.5 Crore INR (200k USD) from sponsorships and events. Was responsible for leading, coordination, quality control, risk management, blogging and management for various 150+ events during Technozion 15.
+
+**Community Service**  
+More than 70 hours of teaching community service in local underrepresented schools as part of Teach for India.
 
 ---
 
