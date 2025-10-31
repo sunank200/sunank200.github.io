@@ -4,9 +4,10 @@ title: Ankit Chaurasia
 subtitle: Senior Software Engineer & Open Source Contributor
 use-site-title: true
 ---
-
 <!-- Google tag (gtag.js) -->
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0TQ1LJ2VT"></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -34,13 +35,13 @@ As a strong advocate of open source and believer in "Learning by Doing," I have 
 <li><a href="#notable-projects">🚀 Notable Projects</a></li>
 <li><a href="#interests">🎯 Interests</a></li>
 <li><a href="#achievements">🏅 Achievements & Extracurricular</a></li>
-<li><a href="#resume">📄 Resume</a></li>
+<li><a href="/resume">📄 Resume</a></li>
 <li><a href="#recent-updates">📰 Recent Updates</a></li>
 <li><a href="#contact">📞 Contact</a></li>
 </ul>
 </div>
 
-## Experience {#experience}
+## Experience
 
 <div class="experience-timeline">
 
@@ -161,7 +162,7 @@ As a strong advocate of open source and believer in "Learning by Doing," I have 
 
 <a href="https://www.linkedin.com/in/sunank200/" class="linkedin-link">📋 View detailed experience history on LinkedIn →</a>
 
-## Skills & Expertise {#skills--expertise}
+## Skills & Expertise
 
 **Core Concepts:** Data Structures and Algorithms, Object-Oriented Programming, System Design, Data Engineering, LLMOps, Large Language Models (LLM), Conversational AI, Geo-spatial Data, REST APIs, CI/CD, Release Management
 
@@ -177,7 +178,7 @@ As a strong advocate of open source and believer in "Learning by Doing," I have 
 
 **Leadership:** Team Management, Technical Hiring, Mentoring, Stakeholder Management, Technical Strategy, Architecture Reviews, Process Improvement, Vendor Management, Cross-functional Collaboration, SDLC, Agile, Sprint Planning
 
-## Open Source Contributions {#open-source}
+## Open Source Contributions
 
 - [**apache-airflow**](https://github.com/apache/airflow) - Core Apache Airflow platform contributions
 - [**ask-astro**](https://github.com/astronomer/ask-astro) - Open-source chatbot for Apache Airflow/Astronomer Q&A
@@ -186,7 +187,7 @@ As a strong advocate of open source and believer in "Learning by Doing," I have 
 - [**astro-sdk**](https://github.com/astronomer/astro-sdk) - Python SDK for rapid ETL development in Airflow
 - [**astronomer-providers**](https://github.com/astronomer/astronomer-providers) - Apache Airflow providers with deferrable operators
 
-## Education {#education}
+## Education
 
 <div class="experience-timeline">
 
@@ -263,18 +264,19 @@ As a strong advocate of open source and believer in "Learning by Doing," I have 
 
 </div>
 
-## Certifications {#certifications}
+## Certifications
 
 - **Astronomer Certification** - DAG Authoring for Apache Airflow (Jan 2022)
 - **Astronomer Certification** - Apache Airflow Fundamentals (Jan 2022)
 - **Apache Airflow** - Udemy Certification (Jan 2021)
 - **SQL** - HackerRank Certification (Sep 2020)
 
-## Talks & Publications {#talks-and-publications}
+## Talks & Publications
 
 I've delivered technical talks at major conferences including Apache Airflow Summit (2022-2025), Microsoft IDC Hyderabad, and published research at KDD 2020.
 
 **Recent Highlights:**
+
 - **2025:** Two talks at Apache Airflow Summit Seattle (Beyond Execution Dates, Seamless Airflow Upgrades)
 - **2024:** Advanced Dataset Scheduling talk at Airflow Summit San Francisco
 - **2023:** Data pipeline patterns from ETL to ML to LLM at Microsoft IDC Hyderabad
@@ -283,7 +285,7 @@ I've delivered technical talks at major conferences including Apache Airflow Sum
 
 **[📚 View all talks, presentations, and publications →](/talks/)** {#talks-link}
 
-## Notable Projects {#notable-projects}
+## Notable Projects
 
 <div class="project-card">
 <div class="project-title">Ask-Astro</div>
@@ -339,26 +341,26 @@ Real-time dashboard integrating with COVID-19 Mobility Data Network and Facebook
 </div>
 </div>
 
-## Interests {#interests}
+## Interests
 
 I'm broadly interested in **Software Engineering**, **Data Engineering**, **Computer Vision**, and **Computer Systems**. I'm also a robotics enthusiast and was a Fellow at Teach for India. Always an aspiring polymath!
 
-## Achievements & Extracurricular {#achievements}
+## Achievements & Extracurricular
 
-**Winner Design Challenge, ISB Hyderabad** (2015)  
+**Winner Design Challenge, ISB Hyderabad** (2015)
 Founded an award-winning startup which built a real-time position reporting system for buses without using GPS. Pitched our idea to Telangana IT minister and received a seed funding offer from TSRTC (Telangana State Road Transport Corporation). [[Presentation]](https://docs.google.com/presentation/d/1m_39QzHgLXtPjgojvQlsqw3c-CUAv9IkXCWSWAgUVGk/edit?usp=sharing)
 
-**Coordinator, Quality Control And Management - Technozion 15** (Aug 2015 – Jan 2016)  
+**Coordinator, Quality Control And Management - Technozion 15** (Aug 2015 – Jan 2016)
 Got ISO 9001:2008 certification and UNESCO patronage for Technozion 15, South India's second largest technical fest. The fest saw a revenue of over 1.5 Crore INR (200k USD) from sponsorships and events. Was responsible for leading, coordination, quality control, risk management, blogging and management for various 150+ events during Technozion 15.
 
-**Community Service**  
+**Community Service**
 More than 70 hours of teaching community service in local underrepresented schools as part of Teach for India.
 
 ---
 
 **📄 [View my complete resume →](../resume/)** {#resume}
 
-## Recent Updates {#recent-updates}
+## Recent Updates
 
 ### 2023
 
@@ -397,7 +399,7 @@ More than 70 hours of teaching community service in local underrepresented schoo
 
 ---
 
-## Contact {#contact}
+## Contact
 
 _For more details, connect with me on [LinkedIn](https://www.linkedin.com/in/sunank200/) • [View detailed professional experience →](https://www.linkedin.com/in/sunank200/)_
 
